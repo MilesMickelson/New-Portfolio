@@ -1,0 +1,19 @@
+{
+  "name": "milesmickelson.com",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilesMickelson/MilesMickelson.github.io.git"
+  },
+  "author": "Miles Mickelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilesMickelson/MilesMickelson.github.io/issues"
+  },
+  "homepage": "https://github.com/MilesMickelson/MilesMickelson.github.io#readme"
+}
