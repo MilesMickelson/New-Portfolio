@@ -13,7 +13,9 @@ import {
 import Title from './components/title';
 import NavBar from './components/navbar';
 import Home from './components/home';
-import Contact from './components/contact';
+import Projects from './components/projects';
+import About from './components/about';
+import Credentials from './components/credentials';
 import Footer from './components/footer';
 
 export default class App extends React.Component {
@@ -21,11 +23,14 @@ export default class App extends React.Component {
     return (
       <div>
         <Title />
-        {/* <Router>
-          <Route exact path='/' component={ Home } />
-          <Route path='/contact' component={ Contact } />
+        <NavBar id='NavBar' />
+        <Router>
+          <Route id='Home' exact path='/' component={ Home } />
+          <Route id='Projects' exact path='/Projects' component={ Projects } />
+          <Route exact path='/About' component={ About } />
+          <Route exact path='/Credentials' component={ Credentials } />
         </Router>
-        <Footer /> */}
+        <Footer />
       </div>
     );
   }

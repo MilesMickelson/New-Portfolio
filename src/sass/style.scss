@@ -1,6 +1,7 @@
 /*#region Global Styling*/
 
-//-----COLORS
+//-----COLORS-----
+
 $black: #000000;
 $black-5: #0d0d0d;
 $black-25: #404040;
@@ -9,7 +10,7 @@ $white-5: #f2f2f2;
 $white-25: #bfbfbf;
 $dark: #310404;
 
-//-----FONTS
+//-----FONTS-----
 
 @font-face {
   font-family: 'NugieItalic';
@@ -38,7 +39,8 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 	font-family: $header-font;
 }
 
-//-----HTML
+//-----HTML-----
+
 * {
 	box-sizing: border-box;
 }
@@ -53,16 +55,92 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
-//-----COMMON STYLING
-$border-primary: 1px solid $black;
 
 /*#endregion Global Styling*/
 
-/*#region Global Scaffolding*/
+/*#region Common Styling*/
 
-$center: 0px auto 0px auto;
+$border-primary: 1px solid $black;
+
+$center: 0px auto;
+
+.center-wrap {
+	text-align: center;
+}
+
+.page-title {
+	font-family: NugieRegular;
+	font-size: 2.75em;
+	text-decoration: underline;
+	color: $dark;
+}
+
+.no-display {
+	display: none;
+}
+
+.height-spacer {
+	height: 1000px;
+}
+
+.paragraph-heading {
+  color: $dark;
+	font-size: 1.75em;
+	font-family: NugieItalic;
+	order: 2;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 20px auto 0px auto;
+}
+
+.paragraph {
+  color: $dark;
+	font-size: 1.25em;
+	font-family: $primary-font;
+	font-weight: bold;
+	margin: 20px 100px 0 100px;
+	text-align: justify;
+	text-indent: 40px;
+}
+
+.musket {
+	width: 45px;
+	order: 1;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.musket2 {
+	width: 45px;
+	order: 3;
+	display: inline-block;
+	vertical-align: middle;
+	transform: scaleX(-1);
+	margin-left: 10px;
+}
+
+.dagger1 {
+	width: 45px;
+	order: 1;
+	display: inline-block;
+	vertical-align: middle;
+	transform: scaleX(-1) rotate(75deg);
+	margin-right: 10px;
+}
+
+.dagger2 {
+	width: 45px;
+	order: 3;
+	display: inline-block;
+	vertical-align: middle;
+	transform: rotate(75deg);
+	margin-left: 10px;
+}
+
+/*#endregion Common Styling*/
+
+/*#region Scaffolding*/
 
 .container-A {
 	width: 100%;
@@ -122,7 +200,23 @@ $center: 0px auto 0px auto;
   }
 }
 
-/*#endregion Global Scaffolding*/
+/*#endregion Scaffolding*/
+
+/*#region App JSX*/
+
+#NavBar {
+  order: 1;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#Projects {
+  order: 2;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*#endregion App JSX*/
 
 /*#region Title*/
 
@@ -158,10 +252,6 @@ $center: 0px auto 0px auto;
 	vertical-align: middle;
 }
 
-#subtitle-wrap {
-	text-align: center;
-}
-
 #sub-title {
   font-family: NugieRegular;
 	font-size: 3.5em;
@@ -178,16 +268,138 @@ $center: 0px auto 0px auto;
 
 /*#region NavBar*/
 
+.nav-container-A {
+  width: 100%;
+	height: 0;
+}
+
+.nav-container-B {
+  width: 100%;
+	max-width: 1000px;
+	margin: $center;
+	height: 0;
+}
+
+.nav-wrap {
+  width: 76px;
+	text-align: center;
+}
+
+.nav-icon {
+	margin-top: 20px;
+}
+
+#wheel {
+	width: 60px;
+	margin-top: 65px;
+}
+
+#chest {
+	width: 50px;
+}
+
+#hook-pirate {
+	width: 60px;
+	margin-left: 17px;
+}
+
+#coin {
+	width: 55px;
+}
+
 /*#endregion NavBar*/
 
 /*#region Home Page*/
 
+.skills-wrap {
+  padding: 0 100px 0 100px;
+}
+
+.col-skill {
+	width: 33.33%;
+}
+
+.skills {
+	list-style-image: url('../images/sword5.png');
+	color: $dark;
+	font-size: 2em;
+	font-family: NugieRegular;
+	margin-left: 50px;
+}
+
+.skills-item {
+  margin-top: 15px;
+}
+
+.last-skills-item {
+  margin-top: 10px;
+}
+
 /*#endregion Home Page*/
 
-/*#region Contact Page*/
+/*#region Projects Page*/
 
-/*#endregion Contact Page*/
+/*#endregion Projects Page*/
+
+/*#region About Page*/
+
+/*#endregion About Page*/
+
+/*#region Credentials Page*/
+
+/*#endregion Credentials Page*/
 
 /*#region Footer*/
+
+#linebreak2 {
+	width: 900px;
+	transform: rotate(180deg);
+	margin-top: 20px;
+}
+
+.glyph-wrap {
+	margin: 10px auto 35px auto;
+	padding: 0px 100px 0px 100px;
+	text-align: center;
+}
+
+.glyph {
+	margin: 0px 45px;
+}
+
+#linkedin {
+  width: 50px;
+	order: 1;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#github {
+  width: 50px;
+	order: 2;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#raven {
+  width: 100px;
+	order: 3;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#medium {
+  width: 50px;
+	order: 4;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#youtube {
+  width: 50px;
+	order: 5;
+	display: inline-block;
+	vertical-align: middle;
+}
 
 /*#endregion Footer*/

@@ -17,7 +17,7 @@ export default class Title extends React.Component {
             </div>
           </div>
           <div className='row'>
-            <div className='col-12' id='subtitle-wrap'>
+            <div className='col-12 center-wrap'>
               <div id='sub-title'>Fullstack Developer</div>
               <img className='linebreak' src={ linebreak } alt='' />
             </div>
