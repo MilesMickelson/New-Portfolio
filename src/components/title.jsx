@@ -1,7 +1,7 @@
 import React from 'react';
 
-const crossedKeys = require('../images/crossedkeys2.png');
-const linebreak = require('../images/linebreak.png');
+const crossedKeys = require('../images/crossedkeys.png');
+const breakline1 = require('../images/breakline1.png');
 
 
 export default class Title extends React.Component {
@@ -11,15 +11,15 @@ export default class Title extends React.Component {
         <div className='container-B'>
           <div className='row'>
             <div className='col-12' id='title-wrap'>
-              <div id='main-title1'>M</div>
+              <div className='title' id='title-part1'>M</div>
               <img id='crossed-keys' src={ crossedKeys } alt='' />
-              <div id='main-title2'>M</div>
+              <div className='title' id='title-part2'>M</div>
             </div>
           </div>
           <div className='row'>
-            <div className='col-12 center-wrap'>
-              <div id='sub-title'>Fullstack Developer</div>
-              <img className='linebreak' src={ linebreak } alt='' />
+            <div className='col-12 sub-wrap'>
+              <div id='sub-title'>Fullstack&nbsp;Developer</div>
+              <img id='breakline1' src={ breakline1 } alt='' />
             </div>
           </div>
         </div>

@@ -9,6 +9,11 @@ $white: #ffffff;
 $white-5: #f2f2f2;
 $white-25: #bfbfbf;
 $dark: #310404;
+$dark-brown: #630404;
+$red: #890e08;
+$yellow: #fbbe08;
+$orange: #eca104;
+$dark-orange: #b05108;
 
 //-----FONTS-----
 
@@ -29,14 +34,20 @@ $dark: #310404;
 $header-font: Apple Chancery, URW Chancery L, Snell Roundhand, Cursive;
 $primary-font: Verdana, Arial, Times, Courier, Georgia;
 
-@mixin font-A {
-	color: $black-5;
-	font-family: $primary-font;
+
+@mixin pirate-reg {
+	color: $dark;
+	font-family: NugieRegular;
 }
 
-@mixin font-B {
-	color: $black-5;
-	font-family: $header-font;
+@mixin pirate-italic {
+	color: $dark;
+	font-family: NugieItalic;
+}
+
+@mixin primary-font {
+	color: $dark;
+	font-family: $primary-font;
 }
 
 //-----HTML-----
@@ -57,88 +68,23 @@ body {
   background-size: cover;
 }
 
+a:-webkit-any-link {
+  color: $red;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ul {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 0.25em;
+	margin-block-end: 0.25em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
 /*#endregion Global Styling*/
-
-/*#region Common Styling*/
-
-$border-primary: 1px solid $black;
-
-$center: 0px auto;
-
-.center-wrap {
-	text-align: center;
-}
-
-.page-title {
-	font-family: NugieRegular;
-	font-size: 2.75em;
-	text-decoration: underline;
-	color: $dark;
-}
-
-.no-display {
-	display: none;
-}
-
-.height-spacer {
-	height: 1000px;
-}
-
-.paragraph-heading {
-  color: $dark;
-	font-size: 1.75em;
-	font-family: NugieItalic;
-	order: 2;
-	display: inline-block;
-	vertical-align: middle;
-	margin: 20px auto 0px auto;
-}
-
-.paragraph {
-  color: $dark;
-	font-size: 1.25em;
-	font-family: $primary-font;
-	font-weight: bold;
-	margin: 20px 100px 0 100px;
-	text-align: justify;
-	text-indent: 40px;
-}
-
-.musket {
-	width: 45px;
-	order: 1;
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.musket2 {
-	width: 45px;
-	order: 3;
-	display: inline-block;
-	vertical-align: middle;
-	transform: scaleX(-1);
-	margin-left: 10px;
-}
-
-.dagger1 {
-	width: 45px;
-	order: 1;
-	display: inline-block;
-	vertical-align: middle;
-	transform: scaleX(-1) rotate(75deg);
-	margin-right: 10px;
-}
-
-.dagger2 {
-	width: 45px;
-	order: 3;
-	display: inline-block;
-	vertical-align: middle;
-	transform: rotate(75deg);
-	margin-left: 10px;
-}
-
-/*#endregion Common Styling*/
 
 /*#region Scaffolding*/
 
@@ -149,7 +95,7 @@ $center: 0px auto;
 .container-B {
   width: 100%;
 	max-width: 1000px;
-	margin: $center;
+	margin: 0 auto;
 }
 
 .col-1 {width: 8.33%;}
@@ -175,16 +121,22 @@ $center: 0px auto;
   float: left;
 }
 
-@mixin horizontal-center {
+@mixin row-center {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	justify-content: center;
+	align-items: center;
 }
 
-@mixin vertical-center {
+@mixin col-center {
 	display: flex;
-	flex-direction: column;
+	flex-flow: col wrap;
 	justify-content: center;
+	align-items: center;
+}
+
+.temp-spacer {
+	height: 1000px;
 }
 
 //-----MEDIA QUERY MIXINS
@@ -202,146 +154,275 @@ $center: 0px auto;
 
 /*#endregion Scaffolding*/
 
-/*#region App JSX*/
+/*#region Common Styling*/
 
-#NavBar {
-  order: 1;
-	display: inline-block;
-	vertical-align: top;
+$border-primary: 1px solid $black;
+
+$center: 0px auto;
+
+.center-wrap {
+	text-align: center;
 }
 
-#Projects {
-  order: 2;
-	display: inline-block;
-	vertical-align: top;
+.page-title {
+	@include pirate-reg;
+	@include col-center;
+	font-size: calc(1.75rem + 2vmin);
+	text-decoration: underline;
+	margin-top: 10px;
 }
 
-/*#endregion App JSX*/
+.paragraph-heading {
+  @include pirate-italic;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	font-size: calc(1.5rem + 1vmin);
+	margin-top: 15px;
+}
+
+.paragraph {
+  color: $dark;
+	font-size: calc(.9rem + .7vmin);
+	font-family: $primary-font;
+	font-weight: bold;
+	margin: 10px 5% 0;
+	text-align: justify;
+	text-indent: 1em;
+}
+
+.dagger1 {
+	width: 1.25em;
+	vertical-align: middle;
+	transform: scaleX(-1) rotate(75deg);
+	margin-right: .5em;
+}
+
+.dagger2 {
+	width: 1.25em;
+	transform: rotate(75deg);
+	margin-left: .5em;
+}
+
+.list-wrap {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+  padding: 0 5%;
+	margin-top: 10px;
+}
+
+#spyglass {
+	width: calc(2rem + 2vmin);
+	min-width: 25px;
+	max-width: 45px;
+	transform: rotate(295deg);
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+@media (max-width: 575px) {
+	.paragraph {
+		text-align: left;
+	}	
+}
+
+// .musket {
+// 	width: 45px;
+// 	order: 1;
+// 	display: inline-block;
+// 	vertical-align: middle;
+// }
+
+// .musket2 {
+// 	width: 45px;
+// 	order: 3;
+// 	display: inline-block;
+// 	vertical-align: middle;
+// 	transform: scaleX(-1);
+// 	margin-left: 10px;
+// }
+
+/*#endregion Common Styling*/
 
 /*#region Title*/
 
 #title-wrap {
-	text-align: center;
-	margin-top: 10px;
+  @include row-center;
+	margin-top: 15px;
 }
 
-#main-title1 {
-  font-family: NugieRegular;
-	font-size: 5em;
-	color: $dark;
-	order: 1;
-	display: inline-block;
-	vertical-align: middle;
+.title {
+  @include pirate-reg;
+	font-size: calc(3rem + 3vmin);
+	filter: drop-shadow(6px 6px 8px $dark);
+}
+
+#title-part1 {
 	margin-right: 10px;
+	order: 1;
 }
 
-#main-title2 {
-  font-family: NugieRegular;
-	font-size: 5em;
-	color: $dark;
-	order: 3;
-	display: inline-block;
-	vertical-align: middle;
+#title-part2 {
 	margin-left: 10px;
+	order: 3;
 }
 
 #crossed-keys {
+	width: calc(2.5rem + 21vmin);
+	min-width: 125px;
+	max-width: 216px;
 	order: 2;
-	text-align: center;
-	display: inline-block;
-	vertical-align: middle;
+	filter: drop-shadow(4px 4px 8px $dark);
+}
+
+.sub-wrap {
+  @include row-center;
 }
 
 #sub-title {
-  font-family: NugieRegular;
-	font-size: 3.5em;
-	color: $dark;
-	margin: 12px 0 0 10px;
+  @include pirate-reg;
+	font-size: calc(2.25rem + 2vmin);
+	margin-top: 10px;
 }
 
-.linebreak {
-	width: 900px;
-	height: 60px;
+#breakline1 {
+	width: 96%;
+	min-width: 372.5px;
+	max-width: 950px;
+	height: 4.5vw;
+	min-height: 22px;
+	max-height: 45px;
+	margin: .75vmin 0;
 }
 
 /*#endregion Title*/
 
 /*#region NavBar*/
 
-.nav-container-A {
-  width: 100%;
-	height: 0;
-}
-
-.nav-container-B {
-  width: 100%;
-	max-width: 1000px;
-	margin: $center;
-	height: 0;
-}
-
 .nav-wrap {
-  width: 76px;
-	text-align: center;
+	@include row-center;
+	max-width: 375px;
+	margin: 0px auto;
+	backdrop-filter: blur(8px);
+	border-radius: 15px;
 }
 
 .nav-icon {
-	margin-top: 20px;
+	margin: 0px 19px;
+	width: calc(2rem + 3vmin);
+	min-width: 45px;
+	max-width: 55px;
 }
 
-#wheel {
-	width: 60px;
-	margin-top: 65px;
-}
+// #wheel {
+//   order: 1;
+// }
 
-#chest {
-	width: 50px;
-}
+// #chest {
+//   order: 2;
+// }
 
-#hook-pirate {
-	width: 60px;
-	margin-left: 17px;
-}
+// #compass {
+//   order: 4;
+// }
 
-#coin {
-	width: 55px;
-}
+// #coin {
+//   order: 3;
+// }
+
+// #pirate {
+//   order: 4;
+// }
+
+// a:link - a normal, unvisited link
+// a:visited - a link the user has visited
+// a:hover - a link when the user mouses over it
+// a:active - a link the moment it is clicked
+// #wheel:hover {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	width: 60px;
+// 	-webkit-animation:spin 4s linear infinite;
+// 	-moz-animation:spin 4s linear infinite;
+// 	animation:spin 4s linear infinite;
+// }
+// @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+// @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+// @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 
 /*#endregion NavBar*/
 
 /*#region Home Page*/
 
-.skills-wrap {
-  padding: 0 100px 0 100px;
+.list {
+	@include pirate-reg;
+	list-style-image: url('../images/smallsword.png');
+	font-size: calc(1.25rem + 1.5vmin);
+	margin-left: 30px;
 }
 
-.col-skill {
-	width: 33.33%;
-}
-
-.skills {
-	list-style-image: url('../images/sword5.png');
-	color: $dark;
-	font-size: 2em;
-	font-family: NugieRegular;
-	margin-left: 50px;
-}
-
-.skills-item {
-  margin-top: 15px;
-}
-
-.last-skills-item {
-  margin-top: 10px;
+.list-item {
+	margin-top: 10px;
 }
 
 /*#endregion Home Page*/
 
 /*#region Projects Page*/
 
+.project-list {
+	list-style-image: url('../images/smallsword.png');
+	margin-left: 30px;
+}
+
+.project-list-item {
+  @include pirate-reg;
+	font-size: calc(1.25rem + 1vmin);
+	margin-top: 10px;
+}
+
 /*#endregion Projects Page*/
 
 /*#region About Page*/
+
+.moreInfoVisible {
+  display: internal;
+}
+
+.moreInfoHidden {
+  display: none;
+}
+
+.button-wrap {
+	@include col-center;
+	margin-top: 15px;
+	vertical-align: middle;
+}
+
+.read-more {  
+  @include pirate-italic;
+	font-size: calc(1.5rem + 1vmin);
+	text-decoration: underline;
+	color: $red;
+	background: none;
+	border: none;
+}
+
+.read-less {
+  @include pirate-reg;
+	font-size: calc(1.25rem + 1vmin);
+	color: $red;
+	background: transparent;
+	border: 2px solid $red;
+	padding: 5px;
+	border-radius: 7px;
+	margin-top: 10px;
+}
 
 /*#endregion About Page*/
 
@@ -351,55 +432,61 @@ $center: 0px auto;
 
 /*#region Footer*/
 
-#linebreak2 {
-	width: 900px;
+#resume-wrap {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#resume-link {
+  @include pirate-reg;
+	font-size: calc(1.35rem + 1.5vmin);
+	vertical-align: middle;
+	color: $red;
+}
+
+#breakline2 {
+	width: 96%;
+	min-width: 372.5px;
+	max-width: 950px;
+	min-height: 25px;
+	max-height: 42px;
 	transform: rotate(180deg);
 	margin-top: 20px;
 }
 
 .glyph-wrap {
-	margin: 10px auto 35px auto;
-	padding: 0px 100px 0px 100px;
-	text-align: center;
+	@include row-center;
+	margin: 15px auto 35px;
+	padding: 0px 10%;
 }
 
 .glyph {
-	margin: 0px 45px;
+	width: calc(2rem + 2.5vmin);
+	vertical-align: middle;
+	margin: 15px 45px;
 }
 
 #linkedin {
-  width: 50px;
 	order: 1;
-	display: inline-block;
-	vertical-align: middle;
 }
 
 #github {
-  width: 50px;
 	order: 2;
-	display: inline-block;
-	vertical-align: middle;
 }
 
-#raven {
-  width: 100px;
-	order: 3;
-	display: inline-block;
+#pigeon {
+  width: calc(3rem + 3vmin);
 	vertical-align: middle;
+	margin: 15px 45px;
+	order: 3;
 }
 
 #medium {
-  width: 50px;
 	order: 4;
-	display: inline-block;
-	vertical-align: middle;
 }
 
 #youtube {
-  width: 50px;
 	order: 5;
-	display: inline-block;
-	vertical-align: middle;
 }
 
 /*#endregion Footer*/

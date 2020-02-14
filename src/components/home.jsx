@@ -1,5 +1,7 @@
 import React from 'react';
 
+const dagger = require('../images/dagger1.png');
+
 export default class Home extends React.Component {
   render() {
     return (
@@ -7,60 +9,59 @@ export default class Home extends React.Component {
         <div className='container-B'>
           <div className='center-wrap'>
             <div className='page-title'>Home</div>
+            <div className='paragraph-heading'>
+              <img className='dagger1' src={ dagger } alt='' />
+              Introduction
+              <img className='dagger2' src={ dagger } alt='' />
+            </div>
             <div className='paragraph'>
               Hi, I’m Miles Mickelson; thank you for visiting my website dedicated 
               to illustrating my proficiencies and shedding some light on who I am. 
-              Please feel free to navigate using the menu icons on your left; and you 
-              can get in touch with me or review my credentials and achievements across 
-              platforms in the footer at anytime.
+              Navigate using the menu icons above and please feel free to get in 
+              touch with me or review my credentials using the icons in the footer anytime.
+            </div>
+            <div className='paragraph-heading'>
+              <img className='dagger1' src={ dagger } alt='' />
+              Seeking
+              <img className='dagger2' src={ dagger } alt='' />
             </div>
             <div className='paragraph'>
-              I am looking to fulfill a fullstack junior developer position, 
+              Looking to fulfill a fullstack junior developer position, 
               preferably with various dynamic roles on an ambitious team with 
               consistent, high-quality output and great camaraderie. Highly value 
               learning from a senior engineer’s counsel and insight for growth 
               and direction.
             </div>
+            <div className='paragraph-heading'>
+              <img className='dagger1' src={ dagger } alt='' />
+              Proficiencies
+              <img className='dagger2' src={ dagger } alt='' />
+            </div>
             <div className='paragraph'>
-              My skills and technology proficiencies are listed below. However, I 
-              love to accept and embrace new challenges; so I do not feel limited 
-              here and look forward to becoming a highly-skilled, well-rounded, 
-              and knowledgeable developer.
+              I love to accept and embrace new challenges; so I do not feel limited here 
+              and look forward to becoming a highly-skilled and well-rounded 
+              knowledgeable developer.
             </div>
           </div>
-          <div className='row skills-wrap'>
-            <div className='col-skill'>
-              <ul className='skills'>
-                <li className='skills-item'>Javascript</li>
-                <li className='skills-item'>React</li>
-                <li className='skills-item'>Redux</li>
-                <li className='last-skills-item'>Sass-Less</li>
-              </ul>
-            </div>
-            <div className='col-skill'>
-              <ul className='skills'>
-                <li className='skills-item'>MongoDB</li>
-                <li className='skills-item'>MySQL</li>
-                <li className='skills-item'>Loopback</li>
-                <li className='last-skills-item'>Mocha-Chai</li>
-              </ul>
-            </div>
-            <div className='col-skill'>
-              <ul className='skills'>
-                <li className='skills-item'>Git Workflow</li>
-                <li className='skills-item'>Heroku</li>
-                <li className='skills-item'>CircleCI</li>
-                <li className='last-skills-item'>Scrum-Agile</li>
-              </ul>
-            </div>
-          </div>
-          <div className='center-wrap'>
-            <div className='paragraph'>
-              My skills and technology proficiencies are listed below. However, I 
-              love to accept and embrace new challenges; so I do not feel limited 
-              here and look forward to becoming a highly-skilled, well-rounded, 
-              and knowledgeable developer.
-            </div>
+          <div className='list-wrap'>
+            <ul className='list'>
+              <li className='list-item'>Javascript</li>
+              <li className='list-item'>React</li>
+              <li className='list-item'>Redux</li>
+              <li className='last-list-item'>Sass+Less</li>
+            </ul>
+            <ul className='list'>
+              <li className='list-item'>MongoDB</li>
+              <li className='list-item'>MySQL</li>
+              <li className='list-item'>Loopback</li>
+              <li className='last-list-item'>Mocha+Chai</li>
+            </ul>
+            <ul className='list'>
+              <li className='list-item'>Git Workflow</li>
+              <li className='list-item'>Heroku</li>
+              <li className='list-item'>CircleCI</li>
+              <li className='last-list-item'>Scrum+Agile</li>
+            </ul>
           </div>
         </div>
       </div>

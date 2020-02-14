@@ -6,8 +6,8 @@ export default class Credentials extends React.Component {
       <div className='container-A'>
         <div className='container-B'>
           <div className='center-wrap'>
-            <div className='page-title'>Credentials & Achievements</div>
-            <div className='height-spacer' />
+            <div className='page-title'>Credentials</div>
+            <div className='temp-spacer' />
           </div>
         </div>
       </div>
