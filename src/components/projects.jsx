@@ -1,6 +1,6 @@
 import React from 'react';
 
-const dagger = require('../images/dagger1.png');
+const dagger = require('../images/dagger.png');
 
 export default class Projects extends React.Component {
   render() {
@@ -10,9 +10,9 @@ export default class Projects extends React.Component {
           <div className='center-wrap'>
             <div className='page-title'>Projects</div>
             <div className='paragraph-heading'>
-              <img className='dagger1' src={ dagger } alt='' />
+              <img className='dagger1' src={ dagger } alt='dagger' />
               The Total Machine
-              <img className='dagger2' src={ dagger } alt='' />
+              <img className='dagger2' src={ dagger } alt='dagger' />
             </div>
             <div className='paragraph'>
               At the 2018 Tealium Hackathon event, my team built a data statistic 
@@ -21,12 +21,12 @@ export default class Projects extends React.Component {
               through a simple information viewing system. As a result of our 
               quality interface, overall presentation, and camaraderie, we finished 
               in the top 3 finalists. My responsibilities were designing the user 
-              interface and presenting our project to the judges.
+              interface and presenting our project to a panel judges.
             </div>
             <div className='paragraph-heading'>
-              <img className='dagger1' src={ dagger } alt='' />
+              <img className='dagger1' src={ dagger } alt='dagger' />
               Ranger Radar
-              <img className='dagger2' src={ dagger } alt='' />
+              <img className='dagger2' src={ dagger } alt='dagger' />
             </div>
             <div className='paragraph'>
               At the 2019 San Diego Zoo Global Hackathon event, my team built a data statistic 
@@ -35,81 +35,81 @@ export default class Projects extends React.Component {
               through a simple information viewing system. As a result of our 
               quality interface, overall presentation, and camaraderie, we finished 
               in the top 3 finalists. My responsibilities were designing the user 
-              interface and presenting our project to the judges.
+              interface and presenting our project to a panel judges.
             </div>
-          </div>
-          <div className='paragraph-heading'>
-            <img className='dagger1' src={ dagger } alt='' />
-            San Diego Code School Highlights
-            <img className='dagger2' src={ dagger } alt='' />
-          </div>
-          <div className='paragraph'>
-            I learned so much going to code school from every single project completed and article 
-            read; listed below are just a few of the ones I'm most proud of with a link to their Github repo.
+            <div className='paragraph-heading'>
+              <img className='dagger1' src={ dagger } alt='dagger' />
+              San Diego Code School Highlights
+              <img className='dagger2' src={ dagger } alt='dagger' />
+            </div>
+            <div className='paragraph'>
+              I learned so much going to code school from every single project completed and article 
+              read; listed below are just a few of the ones I'm most proud of with a link to their Github repo.
+            </div>
           </div>
           <div className='list-wrap'>
             <ul className='project-list'>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/NASA-Viewer' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/NASA-Viewer' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 NASA Viewer
                 </a>
               </li>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/REACT200-Movie-Finder' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/REACT200-Movie-Finder' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 Movie Finder
                 </a>
               </li>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/REACT200-Weather-App' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/REACT200-Weather-App' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 Weather App
                 </a>
               </li>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/REACT100-VSTDA' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/REACT100-VSTDA' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 VSTDA
                 </a>
               </li>
             </ul>
             <ul className='project-list'>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/NODE200-Connecting-MongoDB' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/NODE200-Connecting-MongoDB' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 MongoDB Connect
                 </a>
               </li>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/DB200-MongoDB-Exercises' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/DB200-MongoDB-Exercises' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 MongoDB Exercises
                 </a>
               </li>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/DB100-MySQL-Sakila' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/DB100-MySQL-Sakila' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 MySQL Sakila
                 </a>
               </li>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/NODE200-Loopback-Workshop' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/NODE200-Loopback-Workshop' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 Loopback Workshop
                 </a>
               </li>
             </ul>
             <ul className='project-list'>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/OPS200-Heroku-Deployment' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/OPS200-Heroku-Deployment' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 Heroku Deployment
                 </a>
               </li>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/OPS200-CircleCI' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/OPS200-CircleCI' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 CircleCI Deployment
                 </a>
               </li>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/OPS200-Prove-It-Works' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/OPS200-Prove-It-Works' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 Prove It Works
                 </a>
               </li>
-              <li className='project-list-item'>
-                <a href='https://github.com/MilesMickelson/REACT100-San-Diego-Top-Spots' target='_blank' rel='noopener noreferrer' aria-labelledby='github-repo'>
+              <li className='list-item'>
+                <a href='https://github.com/MilesMickelson/REACT100-San-Diego-Top-Spots' target='_blank' rel='noopener noreferrer preload' aria-labelledby='github-repo'>
                 SD Top Spots
                 </a>
               </li>
@@ -117,9 +117,9 @@ export default class Projects extends React.Component {
           </div>
           <div className='center-wrap'>
             <div className='paragraph-heading'>
-              <img className='dagger1' src={ dagger } alt='' />
+              <img className='dagger1' src={ dagger } alt='dagger' />
               Cheryl Lee's Custom Portfolio Website
-              <img className='dagger2' src={ dagger } alt='' />
+              <img className='dagger2' src={ dagger } alt='dagger' />
             </div>
             <div className='paragraph'>
               Frontend SDCS group project showcasing Ms. Lee's achievements, 
@@ -134,9 +134,9 @@ export default class Projects extends React.Component {
               www.CherylRLee.com.
             </div>
             <div className='paragraph-heading'>
-              <img className='dagger1' src={ dagger } alt='' />
+              <img className='dagger1' src={ dagger } alt='dagger' />
               SDCS Student Tracker
-              <img className='dagger2' src={ dagger } alt='' />
+              <img className='dagger2' src={ dagger } alt='dagger' />
             </div>
             <div className='paragraph'>
               Backend SDCS group project that gave me perspective on employing 

@@ -19,20 +19,20 @@ import Footer from './components/footer';
 export default class App extends React.Component {
   render() {
     return (
-      <div>
+      <>
         <Title />
         <Sticky style={ { 'z-index': '9999' } }>
           <NavBar />
         </Sticky>
         <Router>
-          <ScrollToTop />
+          <ScrollToTop defer />
           <Route exact path='/' component={ Home } />
-          <Route exact path='/Projects' component={ Projects } />
-          <Route exact path='/About' component={ About } />
-          <Route exact path='/Credentials' component={ Credentials } />
+          <Route exact path='/Projects' component={ Projects } defer />
+          <Route exact path='/About' component={ About } defer />
+          <Route exact path='/Credentials' component={ Credentials } defer />
         </Router>
         <Footer />
-      </div>
+      </>
     );
   }
 }

@@ -61,7 +61,7 @@ html {
 }
 
 body {
-	background: url('../images/parchment1.jpg') no-repeat center center fixed $white; 
+	background: url('../images/parchment.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -174,12 +174,13 @@ $center: 0px auto;
 
 .paragraph-heading {
   @include pirate-italic;
+	font-size: calc(1.5rem + 1vmin);
+	text-decoration: underline;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
 	vertical-align: middle;
-	font-size: calc(1.5rem + 1vmin);
 	margin-top: 15px;
 }
 
@@ -191,19 +192,20 @@ $center: 0px auto;
 	margin: 10px 5% 0;
 	text-align: justify;
 	text-indent: 1em;
+	word-wrap: break-all;
 }
 
 .dagger1 {
-	width: 1.25em;
+	width: 43px;
 	vertical-align: middle;
 	transform: scaleX(-1) rotate(75deg);
-	margin-right: .5em;
+	margin-right: 10px;
 }
 
 .dagger2 {
-	width: 1.25em;
+	width: 43px;
 	transform: rotate(75deg);
-	margin-left: .5em;
+	margin-left: 10px;
 }
 
 .list-wrap {
@@ -212,6 +214,10 @@ $center: 0px auto;
 	justify-content: space-between;
 	align-items: flex-start;
   padding: 0 5%;
+	margin-top: 10px;
+}
+
+.list-item {
 	margin-top: 10px;
 }
 
@@ -304,39 +310,25 @@ $center: 0px auto;
 /*#region NavBar*/
 
 .nav-wrap {
-	@include row-center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	height: 61px;
+	width: 100%;
 	max-width: 375px;
-	margin: 0px auto;
+	padding: 4px;
 	backdrop-filter: blur(8px);
 	border-radius: 15px;
+	margin: 0px auto;
 }
 
 .nav-icon {
-	margin: 0px 19px;
 	width: calc(2rem + 3vmin);
 	min-width: 45px;
 	max-width: 55px;
+	vertical-align: middle;
 }
-
-// #wheel {
-//   order: 1;
-// }
-
-// #chest {
-//   order: 2;
-// }
-
-// #compass {
-//   order: 4;
-// }
-
-// #coin {
-//   order: 3;
-// }
-
-// #pirate {
-//   order: 4;
-// }
 
 // a:link - a normal, unvisited link
 // a:visited - a link the user has visited
@@ -355,20 +347,15 @@ $center: 0px auto;
 // @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 // @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-
 /*#endregion NavBar*/
 
 /*#region Home Page*/
 
-.list {
+.skills-list {
 	@include pirate-reg;
 	list-style-image: url('../images/smallsword.png');
 	font-size: calc(1.25rem + 1.5vmin);
 	margin-left: 30px;
-}
-
-.list-item {
-	margin-top: 10px;
 }
 
 /*#endregion Home Page*/
@@ -376,13 +363,13 @@ $center: 0px auto;
 /*#region Projects Page*/
 
 .project-list {
+  @include pirate-reg;
+	font-size: calc(1.25rem + 1vmin);
 	list-style-image: url('../images/smallsword.png');
 	margin-left: 30px;
 }
 
-.project-list-item {
-  @include pirate-reg;
-	font-size: calc(1.25rem + 1vmin);
+.list-item {
 	margin-top: 10px;
 }
 
@@ -427,6 +414,13 @@ $center: 0px auto;
 /*#endregion About Page*/
 
 /*#region Credentials Page*/
+
+.cred-list {
+	@include pirate-reg;
+	list-style-image: url('../images/smallsword.png');
+	font-size: calc(1.25rem + 1.25vmin);
+	margin-left: 30px;
+}
 
 /*#endregion Credentials Page*/
 

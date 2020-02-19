@@ -4,7 +4,6 @@ const coin = require('../images/coin.png');
 const wheel = require('../images/wheel.png');
 const chest = require('../images/chest.png');
 const pirate = require('../images/pirate.png');
-const compass = require('../images/compass.png');
 
 export default class NavBar extends React.Component {
   render() {
@@ -12,17 +11,17 @@ export default class NavBar extends React.Component {
       <div className='container-A'>
         <div className='container-B'>
           <div className='nav-wrap'>
-            <a className='nav-link' href='#/'>
-              <img className='nav-icon' id='wheel' src={ wheel } alt='home' />
+            <a href='#/'>
+              <img className='nav-icon' id='wheel' src={ wheel } alt='home' rel='preload' />
             </a>
-            <a className='nav-link' href='#/Projects'>
-              <img className='nav-icon' id='chest' src={ chest } alt='projects' />
+            <a href='#/Projects'>
+              <img className='nav-icon' id='chest' src={ chest } alt='projects' rel='preload' />
             </a>
-            <a className='nav-link' href='#/Credentials'>
-              <img className='nav-icon' id='coin' src={ coin } alt='credentials' />
+            <a href='#/Credentials'>
+              <img className='nav-icon' id='coin' src={ coin } alt='credentials' rel='preload' />
             </a>
-            <a className='nav-link' href='#/About'>
-              <img className='nav-icon' id='pirate' src={ pirate } alt='about' />
+            <a href='#/About'>
+              <img className='nav-icon' id='pirate' src={ pirate } alt='about' rel='preload' />
             </a>
           </div>
         </div>
