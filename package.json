@@ -35,7 +35,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
-    "cssnano": "^4.1.10",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.20.0",
@@ -54,14 +53,12 @@
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "compression": "^1.7.4",
+    "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "htmlnano": "^0.2.5",
     "morgan": "^1.9.1",
-    "parcel-plugin-compress": "^1.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-hot-loader": "^4.12.19",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
     "react-sticky-el": "^1.1.0"

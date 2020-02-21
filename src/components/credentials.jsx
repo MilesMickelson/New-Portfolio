@@ -2,6 +2,7 @@ import React from 'react';
 
 const dagger = require('../images/dagger.png');
 const spyglass = require('../images/spyglass.png');
+const speakeasy = require('../images/speakeasy.jps');
 
 export default class Credentials extends React.Component {
   constructor(props) {
@@ -44,104 +45,141 @@ export default class Credentials extends React.Component {
     return (
       <div className='container-A'>
         <div className='container-B'>
-          <div className='page-title'>Credentials</div>
-          <div className='paragraph-heading'>
-            <img className='dagger1' src={ dagger } alt='dagger' />
+          <h3>Credentials</h3>
+          <h4>
+            <img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
             Education
             <img className='dagger2' src={ dagger } alt='dagger' />
+          </h4>
+          <div className='cred-list-wrap'>
+            <ul>
+              <li>San Diego Code School: Fullstack Developer Graduated 2019</li>
+              <li>Cicerone+Spirits Evaluator: Certified Lvl 1/Advanced 2017</li>
+              <li>San Diego Union Carpenters: Apprenticeship Lvl 6 2006-12</li>
+              <li>Las Vegas Dealers School: Certified Poker Dealer 2010</li>
+            </ul>
           </div>
-          <div className='list-wrap'>
-            <ul className='cred-list'>
-              <li className='list-item'>San Diego Code School: Fullstack Developer Graduated 2019</li>
-              <li className='list-item'>Cicerone+Spirits Evaluator: Certified Lvl 1/Advanced 2017</li>
-              <li className='list-item'>San Diego Union Carpenters: Apprenticeship Lvl 6 2006-12</li>
-              <li className='list-item'>Las Vegas Dealers School: Certified Poker Dealer 2010</li>
+          <h4 id='articles-header'>
+            <img className='dagger1' src={ dagger } alt='dagger' />
+            Articles & Presentations
+            <img className='dagger2' src={ dagger } alt='dagger' />
+          </h4>
+          <div className='cred-list-wrap'>
+            <ul>
+              <li>Medium: Hacking the Developers Toolbox - Coming Soon!</li>
+              <li>
+                <a
+                  href='https://medium.com/@milesmickelson87/a-journey-through-coding-boot-camp-78c55f6b9a20'
+                  target='_blank'
+                  rel='noopener noreferrer preload'
+                  aria-label='medium article link'
+                >
+                  Medium: My journey through Coding School Bootcamp
+                </a>
+              </li>
+              <li>YouTube: Final SDCS Project Presentation-Coming Soon!</li>
+              <li>YouTube: Demonstration of Cheryl Lee's site-Coming Soon!</li>
             </ul>
           </div>
           <div className='center-wrap'>
-            <div className='paragraph-heading'>
+            <h4>
               <img className='dagger1' src={ dagger } alt='dagger' />
               Experience
               <img className='dagger2' src={ dagger } alt='dagger' />
-            </div>
-            <div className='paragraph'>
+            </h4>
+            <p>
               I have always been a highly motivated and self-disciplined personality, 
               seeking utmost professionalism and reliability in the workplace. 
               Acknowledged in a variety of demanding roles for an excellent capacity 
               to build strong collaborative relationships and flexibility to accept 
               various responsibilities. Furthermore, being touted for competence to 
               lead in a team environment and work as a team player, making positive 
-              contributions to the success of our objective. Read about my professional 
-              highlights in detail below...
-            </div>
+              contributions to the success of our objective.
+            </p>
+            <h5>Read more below...</h5>
             <div className='button-wrap'>
-              <button type='submit' className={ `read-more ${this.state.experienceInfo1 ? 'moreInfoHidden' : 'moreInfoVisible'}` } onClick={ this.experienceToggle1 }>
-                <img id='spyglass' src={ spyglass } alt='spyglass' />
+              <button
+                type='submit'
+                className={ `read-more ${this.state.experienceInfo1 ? 'moreInfoHidden' : 'moreInfoVisible'}` }
+                onClick={ this.experienceToggle1 }
+              >
+                <img className='spyglass' src={ spyglass } alt='spyglass' />
                 Speakeasy Bartending
               </button>
             </div>
-            <div className={ `paragraph-wrap ${this.state.experienceInfo1 ? 'moreInfoVisible' : 'moreInfoHidden'}` }>
-              <div className='paragraph-heading'>
+            <div className={ `${this.state.experienceInfo1 ? 'moreInfoVisible' : 'moreInfoHidden'}` }>
+              <h4>
                 <img className='dagger1' src={ dagger } alt='dagger' />
                 Lead Speakeasy Bartender
                 <img className='dagger2' src={ dagger } alt='dagger' />
-              </div>
-              <div className='paragraph'>
-                An unexpected opportunity arrived for me when a restaurant opened up 
-                in my neighborhood. I had never worked at one before but found myself 
-                hired as a busser & food runner over many applicants. Within a year, 
-                I was able to fill the role of server and positioned as barback 
-                per my request. After gaining knowledge through attending classes 
-                and learning on my own time, I earned a promotion to the speakeasy. 
-                Only the highest quality and most knowledgeable bartenders worked in 
-                there. Eventually, I secured the role of Lead Bartender, responsible 
-                for accommodating all private parties, weekly events, and maintaining 
-                an immaculate establishment. My service, passion, attention to detail, 
-                and memory for regular’s preferences allowed me to earn a reputation for 
-                a local’s favorite bartender among many. Often working alone, my position 
-                required performing many roles and consistently methodical self-sufficiency.
+              </h4>
+              <div id='speakeasy-wrap'>
+                <p id='bartending' aria-hidden='true'>
+                  An unexpected opportunity arrived for me when a restaurant opened up 
+                  in my neighborhood. I had never worked at one before but found myself 
+                  hired as a busser & food runner over many applicants. Within a year, 
+                  I was able to fill the role of server and positioned as barback 
+                  per my request. After gaining knowledge through attending classes 
+                  and learning on my own time, I earned a promotion to the speakeasy. 
+                  Only the highest quality and most knowledgeable bartenders worked in 
+                  there. Eventually, I secured the role of Lead Bartender, responsible 
+                  for accommodating all private parties, weekly events, and maintaining 
+                  an immaculate establishment. My service, passion, attention to detail, 
+                  and memory for regular’s preferences allowed me to earn a reputation for 
+                  a local’s favorite bartender among many. Often working alone, my position 
+                  required performing many roles and consistently methodical self-sufficiency.
+                </p>
+                <img id='speakeasy' src={ speakeasy } alt='speakeasy' />
               </div>
               <button type='submit' className='read-less' onClick={ this.experienceToggle1 }>
                 Collapse Section
               </button>
             </div>
             <div className='button-wrap'>
-              <button type='submit' className={ `read-more ${this.state.experienceInfo2 ? 'moreInfoHidden' : 'moreInfoVisible'}` } onClick={ this.experienceToggle2 }>
-                <img id='spyglass' src={ spyglass } alt='spyglass' />
+              <button
+                type='submit'
+                className={ `read-more ${this.state.experienceInfo2 ? 'moreInfoHidden' : 'moreInfoVisible'}` }
+                onClick={ this.experienceToggle2 }
+              >
+                <img className='spyglass' src={ spyglass } alt='spyglass' />
                 Machine Operations
               </button>
             </div>
-            <div className={ `paragraph-wrap ${this.state.experienceInfo2 ? 'moreInfoVisible' : 'moreInfoHidden'}` }>
-              <div className='paragraph-heading'>
+            <div className={ `${this.state.experienceInfo2 ? 'moreInfoVisible' : 'moreInfoHidden'}` }>
+              <h4>
                 <img className='dagger1' src={ dagger } alt='dagger' />
                 Machine Operations Lead
                 <img className='dagger2' src={ dagger } alt='dagger' />
-              </div>
-              <div className='paragraph'>
+              </h4>
+              <p aria-hidden='true'>
                 In 2012 an acquaintance of mine recommended me to a local sign shop 
                 where I was hired and started on the production floor. After earning 
                 trust and acknowledgment for high-quality output, within a few months, 
                 I trained to run every machine on the floor. Eventually gained 
                 responsibility for laying out production planning, inventory management, 
                 materials procurement, and interdepartmental communication.
-              </div>
+              </p>
               <button type='submit' className='read-less' onClick={ this.experienceToggle2 }>
                 Collapse Section
               </button>
             </div>
             <div className='button-wrap'>
-              <button type='submit' className={ `read-more ${this.state.experienceInfo3 ? 'moreInfoHidden' : 'moreInfoVisible'}` } onClick={ this.experienceToggle3 }>
-                <img id='spyglass' src={ spyglass } alt='spyglass' />
+              <button
+                type='submit'
+                className={ `read-more ${this.state.experienceInfo3 ? 'moreInfoHidden' : 'moreInfoVisible'}` }
+                onClick={ this.experienceToggle3 }
+              >
+                <img className='spyglass' src={ spyglass } alt='spyglass' />
                 Union Carpentry
               </button>
             </div>
-            <div className={ `paragraph-wrap ${this.state.experienceInfo3 ? 'moreInfoVisible' : 'moreInfoHidden'}` }>
-              <div className='paragraph-heading'>
+            <div className={ `${this.state.experienceInfo3 ? 'moreInfoVisible' : 'moreInfoHidden'}` }>
+              <h4>
                 <img className='dagger1' src={ dagger } alt='dagger' />
                 Nuclear Carpenter
                 <img className='dagger2' src={ dagger } alt='dagger' />
-              </div>
-              <div className='paragraph'>
+              </h4>
+              <p aria-hidden='true'>
                 At 16 years of age, I started my first business pressure washing for 
                 people in my neighborhood and simultaneously delivered for Pizza Hut 
                 after getting my license later. During this time, a neighbor took me 
@@ -159,7 +197,7 @@ export default class Credentials extends React.Component {
                 still being an apprentice, I fulfilled a lead role for journeyman carpenters 
                 new to the job site. I'm still great friends with Bill Newton and many of 
                 the individuals I worked together within carpentry today.
-              </div>
+              </p>
               <button type='submit' className='read-less' onClick={ this.experienceToggle3 }>
                 Collapse Section
               </button>

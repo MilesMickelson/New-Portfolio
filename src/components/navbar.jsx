@@ -10,20 +10,20 @@ export default class NavBar extends React.Component {
     return (
       <div className='container-A'>
         <div className='container-B'>
-          <div className='nav-wrap'>
-            <a href='#/'>
+          <nav id='nav-wrap' aria-label='primary'>
+            <a href='#/' aria-current='page'>
               <img className='nav-icon' id='wheel' src={ wheel } alt='home' rel='preload' />
             </a>
-            <a href='#/Projects'>
+            <a href='#/Projects' aria-current='page'>
               <img className='nav-icon' id='chest' src={ chest } alt='projects' rel='preload' />
             </a>
-            <a href='#/Credentials'>
+            <a href='#/Credentials' aria-current='page'>
               <img className='nav-icon' id='coin' src={ coin } alt='credentials' rel='preload' />
             </a>
-            <a href='#/About'>
+            <a href='#/About' aria-current='page'>
               <img className='nav-icon' id='pirate' src={ pirate } alt='about' rel='preload' />
             </a>
-          </div>
+          </nav>
         </div>
       </div>
     );
