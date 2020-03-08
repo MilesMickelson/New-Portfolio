@@ -8,21 +8,19 @@
 
 <!-- TODO's -->
 
-----Deploy to MilesMickelson.com!!!
-
 --Complete site description in projects
 
 --Add accrediting article in site description or footer?
 
 --Full Accessibility testing?
 
--Use gzip compression to improve performance
+-Use gzip compression to improve performance?
   "parcel-plugin-compress"
   "express-static-gzip"
 
 Add animation/styling to pic borders
 
-Setup HMR, watch command, -& with Express?
+Setup HMR, watch command, ...with Express?
 
 Uninstall any unused dependencies-use global depcheck module
 

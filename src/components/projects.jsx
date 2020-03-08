@@ -30,7 +30,7 @@ export default class Projects extends React.Component {
               ~View repository here.
               </a>
             </p>
-            </section>
+          </section>
           <section className='center-wrap'>
             <h4>
               <img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
