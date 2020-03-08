@@ -1,37 +1,30 @@
-# MilesMickelson.com
+# **[MilesMickelson.com](https://milesmickelson.com)**
 
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
-#### Please feel free to view website at MilesMickelson.com-Project description coming soon, thanks for checking it out!
+Thank you for checking out my portfolio project,I had alot of fun making it; updates and an in-depth project description will be coming soon!
 
 * **Thank you**, ***-Miles Mickelson***
 
 <!-- TODO's -->
 
+1.
 --Complete site description in projects
-
 --Add accrediting article in site description or footer?
 
+2.
+--Resize footer breakline to desired dimensions and avoid best practices score ding?
+--Screenshot new deployed audit score = )
+
+3.
 --Full Accessibility testing?
 
--Use gzip compression to improve performance?
-  "parcel-plugin-compress"
-  "express-static-gzip"
+
+4...
+ScrollToTop takes you to Navbar em text labels
 
 Add animation/styling to pic borders
 
-Setup HMR, watch command, ...with Express?
-
-Uninstall any unused dependencies-use global depcheck module
-
 Implement dynamic animations of nav-icons based on path/location instead of boolean
 
-ScrollToTop takes you to Navbar em text labels
-
-Ignore Lighthouses Best Practices Audit Score: HTTPS has higher performance..?
-
-<!-- Original Scripts
-"start": "node server",
-"build": "parcel build src/index.html --no-cache",
-"watch": "NODE_ENV=production parcel watch src/index.html",
-"test": "echo \"Error: no test specified\" && exit 1" -->
+Setup HMR, watch command, ...with Express?
