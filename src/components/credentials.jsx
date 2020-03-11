@@ -47,19 +47,6 @@ export default class Credentials extends React.Component {
         <main className='container-B'>
           <h3>Credentials</h3>
           <h4>
-            <img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
-            Education
-            <img className='dagger2' src={ dagger } alt='dagger' />
-          </h4>
-          <section className='cred-list-wrap'>
-            <ul>
-              <li>San Diego Code School: Fullstack Developer Graduated 2019</li>
-              <li>Cicerone+Spirits Evaluator: Certified Lvl 1/Advanced 2017</li>
-              <li>San Diego Union Carpenters: Apprenticeship Lvl 6 2006-12</li>
-              <li>Las Vegas Dealers School: Certified Poker Dealer 2010</li>
-            </ul>
-          </section>
-          <h4>
             <img className='dagger1' src={ dagger } alt='dagger' />
             Articles & Presentations
             <img className='dagger2' src={ dagger } alt='dagger' />
@@ -78,6 +65,19 @@ export default class Credentials extends React.Component {
                 </a>
               </li>
               <li>YouTube: Demonstration of Cheryl Lee's site-Coming Soon!</li>
+            </ul>
+          </section>
+          <h4>
+            <img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
+            Education
+            <img className='dagger2' src={ dagger } alt='dagger' />
+          </h4>
+          <section className='cred-list-wrap'>
+            <ul>
+              <li>San Diego Code School: Fullstack Developer Graduated 2019</li>
+              <li>Cicerone+Spirits Evaluator: Certified Lvl 1/Advanced 2017</li>
+              <li>San Diego Union Carpenters: Apprenticeship Lvl 6 2006-12</li>
+              <li>Las Vegas Dealers School: Certified Poker Dealer 2010</li>
             </ul>
           </section>
           <section className='center-wrap'>
@@ -115,7 +115,7 @@ export default class Credentials extends React.Component {
                 <img className='dagger2' src={ dagger } alt='dagger' />
               </h4>
               <div className='clearfix-wrap'>
-                <img id='speakeasy-pic' src={ speakeasy } alt='speakeasy' />
+                <img className='dark-glow-image' id='speakeasy-pic' src={ speakeasy } alt='speakeasy' />
                 <div className='center-wrap'>
                   <p id='speakeasy-info' aria-hidden='true'>
                     An unexpected opportunity arrived for me when a restaurant opened up&nbsp;

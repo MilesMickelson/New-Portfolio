@@ -21,6 +21,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "comma-dangle": "off",
     "no-unused-expressions": "warn",
+    "react/destructuring-assignment": ["enabled", "never"],
     "mocha/no-exclusive-tests": "off",
     "no-console": "off",
     "max-len": ["warn", 120],

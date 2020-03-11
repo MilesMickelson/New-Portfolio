@@ -13,7 +13,7 @@ export default class Footer extends React.Component {
     return (
       <footer className='container-A'>
         <div className='container-B'>
-          <div id='resume-wrap'>
+          <div id='resume-wrap' className='red-glow-text'>
             <a
               id='resume-link'
               href='https://drive.google.com/file/d/1Ck6VwC7QesQpox1FijtzQNSBhzMdNuOF/view?usp=sharing'
@@ -74,8 +74,6 @@ export default class Footer extends React.Component {
               <img className='glyph' id='youtube' src={ youtube } alt='youtube' />
             </a>
           </div>
-          {/* <div className='accreditation'>
-          </div> */}
         </div>
       </footer>
     );

@@ -46,7 +46,7 @@ export default class About extends React.Component {
               <img className='dagger2' src={ dagger } alt='dagger' />
             </h4>
             <div className='clearfix-wrap'>
-              <img id='pool-pic' src={ pool } alt='playing pool' />
+              <img className='dark-glow-image' id='pool-pic' src={ pool } alt='playing pool' />
               <p id='hobbies-info'>
                 Being a creative and competitive person, I enjoy many activities with&nbsp;
                 friends, family, and others who enjoy the same endeavors as me.&nbsp;
