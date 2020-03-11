@@ -15,7 +15,7 @@ Thank you for checking out my portfolio project,I had alot of fun making it; upd
 --Resize footer breakline to desired dimensions and avoid best practices score ding?
 
 ## 3.
---Full Accessibility testing?
+--Full Accessibility Testing
 
 ## 4.
 --Dynamic animations of nav-icons based on path/location instead of boolean
