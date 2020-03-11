@@ -48,7 +48,7 @@ export default class Credentials extends React.Component {
           <h3>Credentials</h3>
           <h4>
             <img className='dagger1' src={ dagger } alt='dagger' />
-            Articles & Presentations
+            Publications
             <img className='dagger2' src={ dagger } alt='dagger' />
           </h4>
           <section className='cred-list-wrap'>
