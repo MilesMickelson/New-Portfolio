@@ -17,12 +17,6 @@ export default class Title extends React.Component {
             <h2 id='sub-title' aria-label='sub title' tabIndex='-1'>Fullstack&nbsp;Developer</h2>
             <img id='breakline1' src={ breakline1 } alt='break line' />
           </header>
-          <header id='navlabels-wrap'>
-            <em id='home'>Home</em>
-            <em>Projects</em>
-            <em>Credentials</em>
-            <em>About</em>
-          </header>
         </div>
       </div>
     );

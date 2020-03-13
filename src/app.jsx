@@ -31,7 +31,7 @@ const App = () => {
       </Sticky>
       <Router>
         <ScrollToTop defer />
-        <Route exact path='/' component={ Home } />
+        <Route exact path='/' component={ Home } prerender />
         <Route exact path='/Projects' component={ Projects } defer />
         <Route exact path='/About' component={ About } defer />
         <Route exact path='/Credentials' component={ Credentials } defer />

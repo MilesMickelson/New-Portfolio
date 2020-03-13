@@ -24,6 +24,7 @@ export default class Footer extends React.Component {
             >
               <img className='spyglass' src={ spyglass } alt='spyglass' />
               View Resume PDF
+              <img className='hidden-spyglass' src={ spyglass } alt='spyglass' />
             </a>
           </div>
           <div className='center-wrap'>

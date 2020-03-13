@@ -12,10 +12,20 @@ Thank you for checking out my portfolio project,I had alot of fun making it; upd
 --Complete site description in projects w/accreditation
 
 ## 2.
---Resize footer breakline to desired dimensions and avoid best practices score ding?
+--Update and minimize all project descriptions/paragraphs
 
 ## 3.
---Full Accessibility Testing
+--Resize footer breakline to dimensions and avoid best practices score ding?
 
-## 4.
+### Components & Completed - 
+* **Home**
+Grammarly Completed
+Interface 100% 
+* **Projects**
+* **Credentials**
+* **About**
+
+* *Improvements*
 --Dynamic animations of nav-icons based on path/location instead of boolean
+--Gradient background behind parchment image
+--Full Accessibility Testing

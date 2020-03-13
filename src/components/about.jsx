@@ -8,12 +8,12 @@ export default class About extends React.Component {
     return (
       <div className='container-A'>
         <main className='container-B'>
-          <h3>About</h3>
+          <h3><img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
+            About
+          <img className='dagger2' src={ dagger } alt='dagger' rel='preload' /></h3>
           <section className='center-wrap'>
             <h4>
-              <img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
               Ambition
-              <img className='dagger2' src={ dagger } alt='dagger' />
             </h4>
             <p>
               Miles Mickelson, born in Sacramento, California, currently residing&nbsp;
@@ -28,9 +28,7 @@ export default class About extends React.Component {
           </section>
           <section className='center-wrap'>
             <h4>
-              <img className='dagger1' src={ dagger } alt='dagger' />
               Philosophy
-              <img className='dagger2' src={ dagger } alt='dagger' />
             </h4>
             <p>
               To achieve success in your venture, it comes down to daily&nbsp;
@@ -41,9 +39,7 @@ export default class About extends React.Component {
           </section>
           <section classsName='center-wrap'>
             <h4>
-              <img className='dagger1' src={ dagger } alt='dagger' />
               Hobbies
-              <img className='dagger2' src={ dagger } alt='dagger' />
             </h4>
             <div className='clearfix-wrap'>
               <img className='dark-glow-image' id='pool-pic' src={ pool } alt='playing pool' />

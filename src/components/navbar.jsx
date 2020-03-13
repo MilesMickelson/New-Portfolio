@@ -61,6 +61,12 @@ export default class NavBar extends React.Component {
     return (
       <div className='container-A'>
         <div className='container-B'>
+          <header id='navlabels-wrap'>
+            <em id='home'>Home</em>
+            <em id='projects'>Projects</em>
+            <em id='credentials'>Credentials</em>
+            <em id='about'>About</em>
+          </header>
           <nav id='nav-wrap' aria-label='primary'>
             <a 
               title='Home Page'
@@ -83,17 +89,17 @@ export default class NavBar extends React.Component {
               aria-current='page'
               >
               <img
-                className={ `nav-icon ${this.state.projects ? 'invisible' : 'visible'}` }
+                className={ `nav-icon ${this.state.projects ? 'inVisible' : 'visible'}` }
                 src={ closedChest }
-                id='closedChest'
+                id='closed-chest'
                 alt='closed chest'
                 rel='preload'
               />
               <img
-                className={ `nav-icon ${this.state.projects ? 'visible' : 'invisible'}` }
+                className={ `nav-icon ${this.state.projects ? 'visible' : 'inVisible'}` }
                 src={ openChest }
-                id='openChest'
-                alt='open chest'
+                id='open-chest'
+                alt='chest'
                 rel='preload'
               />
             </a>
