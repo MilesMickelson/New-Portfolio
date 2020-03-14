@@ -163,29 +163,6 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 	text-align: center;
 }
 
-.read-more {  
-  @include pirate-italic;
-	@include cursor;
-	font-size: calc(1.5rem + 1vmin);
-	text-decoration: underline;
-	color: $red25;
-	background: none;
-	border: none;
-}
-
-.read-less {
-  @include pirate-reg;
-	@include cursor;
-	font-size: calc(1.25rem + 1vmin);
-	color: $red25;
-	background: transparent;
-	border: 4px solid $red30;
-	padding: 5px;
-	border-radius: 7px;
-	width: 180px;
-	margin: 10px auto 0;
-}
-
 .large-list-wrap {
 	display: flex;
 	flex-flow: row wrap;
@@ -481,9 +458,9 @@ summary {
 }
 
 .isSpinning {
-	animation: spin 4s cubic-bezier(.69,0,.27,.99) infinite forwards;
-	-webkit-animation: spin 4s cubic-bezier(.69,0,.27,.99) infinite forwards;
-	-moz-animation: spin 4s cubic-bezier(.69,0,.27,.99) infinite forwards;
+	animation: spin 4s cubic-bezier(.7,2.06,.62,.86) infinite forwards;
+	-webkit-animation: spin 4s cubic-bezier(.7,2.06,.62,.86) infinite forwards;
+	-moz-animation: spin 4s cubic-bezier(.7,2.06,.62,.86) infinite forwards;
 }
 
 @keyframes spin {
@@ -504,70 +481,10 @@ summary {
 	}
 }
 
-#wip {
+#open-chest {
 	animation: invert 3s linear infinite forwards;
 	-webkit-animation: invert 3s linear infinite forwards;
 	-moz-animation: invert 3s linear infinite forwards;
-}
-
-#open-chest {
-  animation: golden-glow-image 4s linear infinite forwards;
-  -webkit-animation: golden-glow-image 4s linear infinite forwards;
-  -moz-animation: golden-glow-image 4s linear infinite forwards;
-}
-
-@keyframes golden-glow-image {
-  0% {
-		filter: invert(0%) drop-shadow(6px 6px 15px #ffcc00);
-  }
-  25% {
-		filter: invert(30%) drop-shadow(6px 6px 20px #ffcc00);
-  }
-	50% {
-		filter: invert(60%) drop-shadow(6px 6px 25px #ffcc00);
-  }
-  75% {
-		filter: invert(30%) drop-shadow(6px 6px 20px #ffcc00);
-  }
-  100% {
-		filter: invert(0%) drop-shadow(6px 6px 15px #ffcc00);
-  }
-}
-
-@-webkit-keyframes golden-glow-image {
-  0% {
-		filter: invert(0%) drop-shadow(6px 6px 15px #ffcc00);
-  }
-  25% {
-		filter: drop-shadow(6px 6px 20px #ffcc00);
-  }
-	50% {
-		filter: invert(75%) drop-shadow(6px 6px 25px #ffcc00);
-  }
-  75% {
-		filter: drop-shadow(6px 6px 20px #ffcc00);
-  }
-  100% {
-		filter: invert(0%) drop-shadow(6px 6px 12px #ffcc00);
-  }
-}
-
-@-moz-keyframes golden-glow-image {
-  0% {
-		filter: invert(0%) drop-shadow(6px 6px 12px #ffcc00);
-  }
-  25% {
-		filter: drop-shadow(6px 6px 20px #ffcc00);
-  }
-	50% {
-		filter: invert(75%) drop-shadow(6px 6px 25px #ffcc00);
-  }
-  75% {
-		filter: drop-shadow(6px 6px 20px #ffcc00);
-  }
-  100% {
-		filter: invert(0%) drop-shadow(6px 6px 12px #ffcc00);
-  }
 }
 
 @keyframes invert {
@@ -575,7 +492,7 @@ summary {
     filter: invert(0%);
   }
 	50% {
-    filter: invert(75%) drop-shadow(6px 6px 20px #ffcc00);
+    filter: invert(75%) drop-shadow(8px 8px 20px #ffcc00);
 	}
   100% {
     filter: invert(0%);
@@ -587,7 +504,7 @@ summary {
     filter: invert(0%);
   }
 	50% {
-    filter: invert(75%);
+    filter: invert(75%) drop-shadow(8px 8px 20px #ffcc00);
 	}
   100% {
     filter: invert(0%);
@@ -599,7 +516,7 @@ summary {
     filter: invert(0%);
   }
 	50% {
-    filter: invert(75%) drop-shadow(6px 6px 20px #ffcc00);
+    filter: invert(75%) drop-shadow(8px 8px 20px #ffcc00);
 	}
   100% {
     filter: invert(0%);
@@ -808,7 +725,7 @@ summary {
 }
 
 .last-item {
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 /*#endregion Home Page*/
@@ -846,6 +763,20 @@ summary {
 	min-width: 110px;
 	max-width: 170px;
 	margin: 5px 8px 4px 0;
+}
+
+.close-details {
+  @include pirate-reg;
+	font-size: calc(1.1rem + 1vmin);
+	background: transparent;
+	border: 3px solid $red25;
+	padding: 7px;
+	border-radius: 7px;
+	margin-top: 10px;
+}
+
+.close-details:hover {
+  @include cursor;
 }
 
 /*#endregion Credentials Page*/

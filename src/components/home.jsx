@@ -15,7 +15,13 @@ export default class Home extends React.Component {
             <div className='center-wrap'>
               <h4>Introduction</h4>
               <div className='clearfix-wrap'>
-                <img className='dark-glow-image' id='profile' src={ profile } alt='self image' rel='preload' />
+                <img 
+                  className='dark-glow-image'
+                  id='profile'
+                  src={ profile }
+                  alt='self image'
+                  rel='preload'
+                />
                 <p id='intro-info'>
                   Hi, I’m Miles Mickelson, and thank you for visiting my website dedicated to illustrating my skills, credentials, and shedding some light on who I am. I am currently looking to fulfill a fullstack junior developer position, preferably with various dynamic roles, on an ambitious team with consistent, high-quality output and great camaraderie. I highly value learning from a senior engineer’s counsel and gaining insight for growth and direction. Please feel free to review my accounts displayed in the footer, and contact me at any time.
                 </p>

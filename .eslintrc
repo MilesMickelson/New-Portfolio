@@ -26,14 +26,13 @@
     "no-console": "off",
     "max-len": ["warn", 120],
     "space-unary-ops": [
-        2, {
-          "words": true,
-          "nonwords": true,
-          "overrides": {
-            "new": true,
-            "++": true
-          }
+      2, {
+        "words": true,
+        "nonwords": true,
+        "overrides": {
+          "new": true,
+          "++": true
+        }
     }]
-  },
-  "parser": "babel-eslint"
+  }
 }

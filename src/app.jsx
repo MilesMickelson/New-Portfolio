@@ -25,18 +25,18 @@ setConfig({
 const App = () => {
   return (
     <>
-      <Title />
-      <Sticky style={ { zIndex: '9999' } }>
-        <NavBar />
+      <Title prerender />
+      <Sticky style={ { zIndex: '9999' } } async >
+        <NavBar prerender />
       </Sticky>
-      <Router>
-        <ScrollToTop defer />
+      <Router prerender >
+        <ScrollToTop async />
         <Route exact path='/' component={ Home } prerender />
         <Route exact path='/Projects' component={ Projects } defer />
         <Route exact path='/About' component={ About } defer />
         <Route exact path='/Credentials' component={ Credentials } defer />
       </Router>
-      <Footer />
+      <Footer prerender />
     </>
   );
 };
