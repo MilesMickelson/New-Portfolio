@@ -61,12 +61,6 @@ export default class NavBar extends React.Component {
     return (
       <div className='container-A'>
         <div className='container-B'>
-          <div id='navlabels-wrap'>
-            <em id='home'>Home</em>
-            <em id='projects'>Projects</em>
-            <em id='credentials'>Credentials</em>
-            <em id='about'>About</em>
-          </div>
           <nav id='nav-wrap' aria-label='primary'>
             <a 
               title='Home Page'

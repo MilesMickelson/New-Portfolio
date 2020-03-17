@@ -35,19 +35,19 @@ export default class Home extends React.Component {
             </div>
             <div id='prof-list-wrap'>
               <ul>
-                <li>Javascript</li>
+                <li className='first-item'>Javascript</li>
                 <li>React</li>
                 <li>Redux</li>
                 <li className='last-item'>Sass+Less</li>
               </ul>
               <ul>
-                <li>MongoDB</li>
+                <li className='first-item'>MongoDB</li>
                 <li>MySQL</li>
                 <li>Loopback</li>
                 <li className='last-item'>Mocha+Chai</li>
               </ul>
               <ul>
-                <li>Git Workflow</li>
+                <li className='first-item'>Git Workflow</li>
                 <li>Heroku</li>
                 <li>CircleCI</li>
                 <li className='last-item'>Scrum+Agile</li>

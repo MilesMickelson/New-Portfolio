@@ -52,9 +52,13 @@ export default class Credentials extends React.Component {
           </h3>
           <section>
             <h4>Publications</h4>
-            <div className='large-list-wrap top-margin'>
+            <div className='large-list-wrap'>
               <ul>
-                <li>Medium: Hacking the Developers Toolbox - Coming Soon!</li>
+                <li 
+                  className='first-item'
+                >
+                Medium: Hacking the Developers Toolbox - Coming Soon!
+                </li>
                 <li className='list-item-link'>
                   <a
                     href='https://medium.com/@milesmickelson87/a-journey-through-coding-boot-camp-78c55f6b9a20'
@@ -72,9 +76,13 @@ export default class Credentials extends React.Component {
           </section>
           <section>
             <h4>Education</h4>
-              <div className='large-list-wrap top-margin'>
+              <div className='large-list-wrap'>
                 <ul>
-                  <li>San Diego Code School: Fullstack Developer, Graduated 2019</li>
+                  <li
+                    className='first-item'
+                  >
+                  San Diego Code School: Fullstack Developer, Graduated 2019
+                  </li>
                   <li>Cicerone+Spirits Evaluator: Certified Lvl 1/Advanced, 2017</li>
                   <li>San Diego Union Carpenters: Apprenticeship Lvl 6, 2006-12</li>
                   <li>Las Vegas Dealers School: Certified Poker Dealer, 2010</li>
@@ -82,12 +90,10 @@ export default class Credentials extends React.Component {
               </div>
           </section>
           <section>
-            <div className='center-wrap'>
               <h4>Experience</h4>
               <p>
                 I have always had a highly motivated and self-disciplined personality, seeking the utmost professionalism and reliability in the workplace. Throughout a variety of demanding roles, I have been acknowledged for my capacity to build strong, collaborative relationships, and for an ability to accept a multitude of responsibilities. Furthermore, being touted for competence to lead in a team environment and work as a team player, making positive contributions to the success of our objective-read more below...
               </p>
-            </div>
             <div className='large-list-wrap'>
               <ul className={ `${this.state.speakeasyInfo ? 'inVisible' : 'visible'}` }>
                 <li>

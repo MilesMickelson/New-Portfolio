@@ -19,7 +19,6 @@ export default class Footer extends React.Component {
               href='https://drive.google.com/file/d/1Ck6VwC7QesQpox1FijtzQNSBhzMdNuOF/view?usp=sharing'
               target='_blank'
               rel='noopener noreferrer'
-              title='Resume PDF'
             >
               <img className='spyglass' src={ spyglass } alt='' />
               View Resume PDF

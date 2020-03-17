@@ -169,7 +169,6 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 	justify-content: flex-start;
 	align-items: flex-start;
   padding: 0 5%;
-	margin-top: 10px;
   font-size: calc(1rem + 1.25vmin);
 }
 
@@ -179,7 +178,6 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 	justify-content: space-between;
 	align-items: flex-start;
   padding: 0 5%;
-	margin-top: 10px;
 	font-size: calc(1rem + 1.25vmin);
 }
 
@@ -189,8 +187,8 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 	font-size: calc(1rem + 1.25vmin);
 }
 
-.top-margin {
-	margin-top: -5px;
+.first-item {
+  margin-top: 5px;
 }
 
 .clearfix-wrap::after {
@@ -211,12 +209,12 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 
 html {
   scroll-behavior: smooth;
-	background-color: $black-10;
+	background-color: $black-5;
 	background-image: url('../images/parchment.jpg');
-  background-size: 1250px 100%;
-  -webkit-background-size: 1250px 100%;
-  -moz-background-size: 1250px 100%;
-  -o-background-size: 1250px 100%;
+  background-size: 1150px 100%;
+  -webkit-background-size: 1150px 100%;
+  -moz-background-size: 1150px 100%;
+  -o-background-size: 1150px 100%;
   background-repeat: no-repeat;
 	background-position: center center;
   background-attachment: fixed;
@@ -746,7 +744,11 @@ summary {
 	width: calc(200px + 40vmin);
 	min-width: 375px;
 	max-width: 575px;
-	margin: 10px auto;
+	margin: 15px auto 0;
+}
+
+.audit-description {
+  margin: 10px 0;
 }
 
 /*#endregion Projects Page*/

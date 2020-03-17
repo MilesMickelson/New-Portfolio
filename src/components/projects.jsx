@@ -7,17 +7,37 @@ export default class Projects extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      tealiumInfo: false,
+      rangerRadarInfo: false,
       cherylLeeInfo: false,
       studentTrackerInfo: false,
       nasaViewerInfo: false,
       movieFinderInfo: false,
       weatherAppInfo: false
     };
+    this.tealiumToggle = this.tealiumToggle.bind(this);
+    this.rangerRadarToggle = this.rangerRadarToggle.bind(this);
     this.cherylLeeToggle = this.cherylLeeToggle.bind(this);
     this.studentTrackerToggle = this.studentTrackerToggle.bind(this);
     this.nasaViewerToggle = this.nasaViewerToggle.bind(this);
     this.movieFinderToggle = this.movieFinderToggle.bind(this);
     this.weatherAppToggle = this.weatherAppToggle.bind(this);
+  }
+
+  tealiumToggle() {
+    if (this.state.tealiumInfo === true) {
+      this.setState({ tealiumInfo: false });
+    } else {
+      this.setState({ tealiumInfo: true });
+    }
+  }
+
+  rangerRadarToggle() {
+    if (this.state.rangerRadarInfo === true) {
+      this.setState({ rangerRadarInfo: false });
+    } else {
+      this.setState({ rangerRadarInfo: true });
+    }
   }
 
   cherylLeeToggle() {
@@ -71,9 +91,8 @@ export default class Projects extends React.Component {
           </h3>
           <section className='center-wrap'>
             <h4>MilesMickelson.com</h4>
-            <img className='dark-glow-image' id='audit' src={ audit } alt='audit score' />
             <p>
-              Thank you for your interest in myself and this website, I took enjoyment in the developing process and acquired a myriad of knowledge and tools along the way. My mission for this project was to complete a website built with the result being one of high performance, optimization, proper accessibility, and include an entertaining theme. Built with Node, React, Parcel, and Sass, and a customized ES-Lint AirBNB configuration for clean and purposeful code. The website is 100% responsive across all devices and screen sizes without a single media query; while also maintaining maximum browser compatibility and a brand logo for every space. Implementing the lighthouse tool to audit and review its feedback, I was able to maximize performance, accessibility, best practices, and search engine optimization-final audit score presented with details outlined below. Google analytics informative data collection will support continuous improvement
+              My mission for this project was to develop a high quality website and showcase my creative abilities. To do so, I used Node, React, Parcel, Sass, and a custom ES-Lint AirBNB configuration for clean and concise code. This website is fully responsive across all screen sizes, without the use of a single media query, and maintain utmost browser compatibility. I was able to maximize performance, accessibility, best practices, and search engine optimization by utilizing the Lighthouse module. The final audit score and details are outlined below. Further, Google analytics informative data collection will support continuous improvement
               <a
                 href='https://github.com/MilesMickelson/MilesMickelson.github.io'
                 className='post-link'
@@ -82,55 +101,114 @@ export default class Projects extends React.Component {
                 title='Miles Mickelsons Portfolio Project Github Repository'
                 aria-label='portfolio project repository link'
               >
-              -view repository.
-              </a>
-              Performance - All files and images are compressed and served up in a gzip, brotli, or select image format to decrease loading time and total memory used.  Deferring all non-essential elements to the first home page load, waiting until the initial presentation is complete, and pre-renders the rest of the pages and images before you visit them maximizing navigation speed.<br/>
-              Accessibility - Utilizing correct aria attributes with valid values in conjunction with appropriate HTML structuring and landmark regions, the site is 100% accessible. It can be accurately navigated with a keyboard and voice assistant technology, giving informative feedback quickly for essential elements only, and when necessary, describes more for visual components.<br />
-              Best Practices - Employs HTTPS and HTML attributes to avoid security vulnerabilities. All images displayed with correct aspect ratios and no browser errors logged into the console.<br />
-              Search Engine Optimization - Fulfills necessary elements with proper attributes and descriptive text to increase search optimization rating with link targets and text sized appropriately.<br />
-            </p>
-          </section>
-          <section className='center-wrap'>
-            <h4>The Total Machine</h4>
-            <p>
-              At the 2018 Tealium Hackathon event, my team built a data statistic display tool 
-              to give Tealium an added service for their clients, supplying them a way to achieve 
-              coordinated marketing strategies through a simple information viewing system. As a 
-              result of our quality interface, overall presentation, and camaraderie, we finished in the top 3 finalists. My responsibilities were designing the user interface and presenting our project to a panel judges
-              <a
-                href='https://github.com/MilesMickelson/tealium-hackathon'
-                rel='noopener noreferrer'
-                target='_blank'
-                title='The Total Machine Project Github Repository'
-                aria-label='total machine project repository link'
-              >
-              -view repository.
+              <i>–view repository.</i>
               </a>
             </p>
-          </section>
-          <section className='center-wrap'>
-            <h4>Ranger Radar</h4>
-            <p>
-              At the 2019 San Diego Global Zoo Hackathon event, we built an application to provide African Rangers a way to track live animal movements and human encroachment. Providing a solution for this is a tough challenge to overcome; the problem is getting the data in real-time and keeping it secure. Doing the best with what was available, we integrated multiple API's to display the objective of our application and provide ideas for future technology implementations such as motion sensors and thumbprinting/facial+shape recognition technology. I created the interface of the application and assisted in; our search of resources, planning with the team, and accepted the role as primary presentee to the panel of judges
-              <a
-                href='https://github.com/MilesMickelson/Ranger-Radar'
-                className='post-link'
-                rel='noopener noreferrer'
-                target='_blank'
-                title='Ranger Radar Project Github Repository'
-                aria-label='ranger radar project repository link'
-              >
-              -view repository.
-              </a>
+            <img className='dark-glow-image' id='audit' src={ audit } alt='audit score' />
+            <p className='audit-description'>
+              <i>Performance</i> - All files and images are compressed and served up in a gzip, brotli, or select image format to decrease loading time and total memory used.  Deferring all non-essential elements to the first home page load, waiting until the initial presentation is complete, and pre-renders the rest of the pages and images before you visit them maximizing navigation speed.
+            </p>
+            <p className='audit-description'>
+              <i>Accessibility</i> - Utilizing correct aria attributes with valid values in conjunction with appropriate HTML structuring and landmark regions, the site is 100% accessible. It can be accurately navigated with a keyboard and voice assistant technology, giving informative feedback quickly for essential elements only, and when necessary, describes more for visual components.
+            </p>
+            <p className='audit-description'>
+              <i>Best Practices</i> - Employs HTTPS and HTML attributes to avoid security vulnerabilities. All images displayed with correct aspect ratios and no browser errors logged into the console.
+            </p>
+            <p className='audit-description'>
+              <i>Search Engine Optimization</i> - Fulfills necessary elements with proper attributes and descriptive text to increase search optimization rating with link targets and text sized appropriately.
             </p>
           </section>
           <section>
-            <div className='center-wrap'>
-            <h4>San Diego Code School Highlights</h4>
-            <p>
-              I am very proud of how much I learned and gained both professionally and personally going through code school. Listed below are a few of the projects I'm most proud of with a description and link to their Github repository where available, thank you for viewing.
-            </p>
+            <h4>Hackathon Events</h4>
+            <div className='large-list-wrap'>
+              <ul>
+                <li>
+                  The Total Machine - 
+                  <button
+                    type='submit'
+                    className={ `details-button ${this.state.tealiumInfo ? 'inVisible' : 'visible'}` }
+                    onClick={ this.tealiumToggle }
+                    aria-label='view project details'
+                    aria-controls='tealium info'
+                    aria-expanded='false'
+                  >
+                    View Details
+                  </button>
+                  <button
+                    type='submit'
+                    className={ `details-button ${this.state.tealiumInfo ? 'visible' : 'inVisible'}` }
+                    onClick={ this.tealiumToggle }
+                    aria-label='close project details'
+                    aria-controls='tealium info'
+                    aria-expanded='true'
+                  >
+                    Close Details
+                  </button>
+                </li>
+              </ul>
+              <div className={ `${this.state.tealiumInfo ? 'visible' : 'inVisible'}` }> 
+                <p id='tealium info' tabIndex='0'>
+                  At the 2018 Tealium Hackathon event, my team built a customer data statistic display tool to give Tealium an added service for their clients, supplying them a way to achieve coordinated marketing strategies through a simple information viewing system. As a result of our quality interface, overall presentation, and camaraderie, we finished in the top 3 finalists. My responsibilities were designing the user interface and presenting our project to a panel judges
+                  <a
+                    href='https://github.com/MilesMickelson/tealium-hackathon'
+                    rel='noopener noreferrer'
+                    target='_blank'
+                    title='The Total Machine Project Github Repository'
+                    aria-label='total machine project repository link'
+                  >
+                  <i>–view repository.</i>
+                  </a>
+                </p>
+              </div>
             </div>
+            <div className='large-list-wrap'>
+              <ul>
+                <li>
+                  Ranger Radar - 
+                  <button
+                    type='submit'
+                    className={ `details-button ${this.state.rangerRadarInfo ? 'inVisible' : 'visible'}` }
+                    onClick={ this.rangerRadarToggle }
+                    aria-label='view project details'
+                    aria-controls='ranger radar info'
+                    aria-expanded='false'
+                  >
+                    View Details
+                  </button>
+                  <button
+                    type='submit'
+                    className={ `details-button ${this.state.rangerRadarInfo ? 'visible' : 'inVisible'}` }
+                    onClick={ this.rangerRadarToggle }
+                    aria-label='close project details'
+                    aria-controls='ranger radar info'
+                    aria-expanded='true'
+                  >
+                    Close Details
+                  </button>
+                </li>
+              </ul>
+              <div className={ `${this.state.rangerRadarInfo ? 'visible' : 'inVisible'}` }> 
+                <p id='ranger radar info' tabIndex='0'>
+                  At the 2019 San Diego Global Zoo Hackathon event, my team built an application to provide African Rangers a way to track live animal movements and human encroachment. We integrated multiple API's to display our applications objective and provided ideas for future technology implementations such as motion sensors and thumbprinting/facial+shape recognition technology. I created the interface of the application and assisted in; our search of resources, planning, and performed as primary presentee to the panel of judges
+                  <a
+                    href='https://github.com/MilesMickelson/Ranger-Radar'
+                    className='post-link'
+                    rel='noopener noreferrer'
+                    target='_blank'
+                    title='Ranger Radar Project Github Repository'
+                    aria-label='ranger radar project repository link'
+                  >
+                  <i>–view repository.</i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h4>Code School Highlights</h4>
+            <p>
+              I am very proud of how much I learned and gained both professionally and personally graduating from San Diego Code School. Listed below are a few of the projects I'm most pleased of with a description and link to their Github repository where available, thank you for viewing.
+            </p>
             <div className='large-list-wrap'>
               <ul>
                 <li>
@@ -167,7 +245,7 @@ export default class Projects extends React.Component {
                   title='Cheryl Lees Portfolio Website Project Github Repository'
                   aria-label='view cheryl lee project repository link'
                 >
-                  -view repository.
+                <i>–view repository.</i>
                 </a>
                 </p>
               </div>
@@ -200,7 +278,7 @@ export default class Projects extends React.Component {
               </ul>
               <div className={ `${this.state.studentTrackerInfo ? 'visible' : 'inVisible'}` }>                
                 <p id='student tracker info' tabIndex='0'>
-                My final SDCS group project engaged numerous technologies simultaneously, built with React/Redux, MongoDB, Loopback, and various API's. Planning and workflow executed with Git, Scrum, and Agile. We successfully integrated a custom command into the school's slack workspace to input your information and have it saved to a database, which allows both the administration and students to view their current progress trend on a dashboard. Was individually responsible for incorporating the Github API for feedback on total commits in the last seven days-private school repository.
+                My final SDCS group project engaged numerous technologies simultaneously, built with React/Redux, MongoDB, Loopback, and various API's. Planning and workflow executed with Git, Scrum, and Agile. We successfully integrated a custom command into the school's slack workspace to input your information and have it saved to a database, which allows both the administration and students to view their current progress trend on a dashboard. Was individually responsible for incorporating the Github API for feedback on total commits in the last seven days–private school repository.
                 </p>
               </div>
             </div>
@@ -239,7 +317,7 @@ export default class Projects extends React.Component {
                   rel='noopener noreferrer preload'
                   aria-label='NASA viewer project github repository link'
                 >
-                  -view repository.
+                <i>–view repository.</i>
                 </a>
                 </p>
               </div>
@@ -279,7 +357,7 @@ export default class Projects extends React.Component {
                   rel='noopener noreferrer preload'
                   aria-label='React 200 Movie Finder project github repository link'
                 >
-                -view repository.
+                <i>–view repository.</i>
                 </a>
                 </p>
               </div>
@@ -319,7 +397,7 @@ export default class Projects extends React.Component {
                   rel='noopener noreferrer preload'
                   aria-label='React 200 Weather App project github repository link'
                 >
-                -view repository.
+                <i>–view repository.</i>
                 </a>
                 </p>
               </div>
