@@ -45,9 +45,11 @@ export default class Credentials extends React.Component {
     return (
       <div className='container-A'>
         <main className='container-B'>
-          <h3><img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
+          <h3>
+            <img className='dagger1' src={ dagger } alt='' rel='preload' />
             Credentials
-          <img className='dagger2' src={ dagger } alt='dagger' rel='preload' /></h3>
+            <img className='dagger2' src={ dagger } alt='' rel='preload' />
+          </h3>
           <section>
             <h4>Publications</h4>
             <div className='large-list-wrap top-margin'>
@@ -59,7 +61,7 @@ export default class Credentials extends React.Component {
                     className='list-item-link'
                     target='_blank'
                     rel='noopener noreferrer preload'
-                    aria-label='medium article link'
+                    aria-label='medium code school article link'
                   >
                     Medium: Journey Through Code School Bootcamp
                   </a>
@@ -93,6 +95,9 @@ export default class Credentials extends React.Component {
                     type='submit'
                     onClick={ this.speakeasyToggle }
                     className='details-button'
+                    aria-label='open bartending details'
+                    aria-controls='speakeasy-info'
+                    aria-expanded='false'
                   >
                   Speakeasy Bartending - View Details
                   </button>
@@ -104,10 +109,17 @@ export default class Credentials extends React.Component {
               <div className='clearfix-wrap'>
                 <img className='dark-glow-image' id='speakeasy-pic' src={ speakeasy } alt='speakeasy' />
                 <div className='center-wrap'>
-                  <p id='speakeasy-info' aria-hidden='true'>
+                  <p id='speakeasy-info' tabIndex='0'>
                     An unexpected opportunity arrived for me when a restaurant opened up in my neighborhood. I had never worked at one before but found myself hired as a busser & food runner over many applicants. Within a year, I was able to fill the role of server and positioned as barback per my request. After gaining knowledge through attending classes and learning on my own time, I earned a promotion to the speakeasy. Only the highest quality and most knowledgeable bartenders worked in there. Eventually, I secured the role of Lead Bartender, responsible for accommodating all private parties, weekly events, and maintaining an immaculate establishment. My service, passion, attention to detail, and memory for regular’s preferences allowed me to earn a reputation for a local’s favorite bartender, among many. Often working alone, my position required performing many roles and consistently methodical self-sufficiency.
                   </p>
-                  <button type='submit' className='close-details red-glow-text' onClick={ this.speakeasyToggle }>
+                  <button 
+                    type='submit'
+                    className='close-details red-glow-text'
+                    aria-label='close bartending details'
+                    aria-controls='speakeasy-info'
+                    aria-expanded='true'
+                    onClick={ this.speakeasyToggle }
+                  >
                     Close Details
                   </button>
                 </div>
@@ -120,6 +132,9 @@ export default class Credentials extends React.Component {
                     type='submit'
                     onClick={ this.machiningToggle }
                     className='details-button'
+                    aria-label='open machining details'
+                    aria-controls='machining info'
+                    aria-expanded='false'
                   >
                   Machine Operations - View Details
                   </button>
@@ -128,10 +143,17 @@ export default class Credentials extends React.Component {
             </div>
             <div className={ `center-wrap ${this.state.machiningInfo ? 'visible' : 'inVisible'}` }>
               <h5>Machine Operations Lead</h5>
-              <p aria-hidden='true'>
+              <p id='machining info' tabIndex='0'>
                 In 2012 an acquaintance of mine recommended me to a local sign shop where I was hired and started on the production floor. After earning trust and acknowledgment for high-quality output, within a few months, I trained to run every machine in the production room. I eventually gained responsibility for job planning workflow design, inventory management, materials procurement, and interdepartmental communication throughout the manufacturing process.
               </p>
-              <button type='submit' className='close-details red-glow-text' onClick={ this.machiningToggle }>
+              <button
+                type='submit'
+                className='close-details red-glow-text'
+                aria-label='close machining details'
+                aria-controls='machining info'
+                aria-expanded='true'
+                onClick={ this.machiningToggle }
+              >
                 Close Details
               </button>
             </div>
@@ -142,6 +164,9 @@ export default class Credentials extends React.Component {
                     type='submit'
                     onClick={ this.carpentryToggle }
                     className='details-button'
+                    aria-label='view carpentry details'
+                    aria-controls='carpentry info'
+                    aria-expanded='false'
                   >
                   Union Carpentry - View Details
                   </button>
@@ -150,10 +175,17 @@ export default class Credentials extends React.Component {
             </div>
             <div className={ `center-wrap ${this.state.carpentryInfo ? 'visible' : 'inVisible'}` }>
               <h5>Nuclear Carpenter</h5>
-              <p aria-hidden='true'>
+              <p id='carpentry info' tabIndex='0'>
                 At 16 years of age, I started my first business pressure washing for people in my neighborhood and simultaneously delivered for Pizza Hut after getting my license later. During this time, a neighbor took me under his wing and offered me an opportunity to work at the San Onofre Nuclear Power Plant. He was the highest-level manager for the Union Carpenter's Trade on site. During the first season, my role was supporting the tradesman. However, after being fully immersed 60 hours a week for over three months, I decided to go through the Union Carpenters apprenticeship. I was a carpenter for the next six years employed by many contractors doing finish, roofing, concrete, and scaffolding work. The reputation for my work ethic earned me recommendations from my foremen for almost every other job I worked as a carpenter. In my last season at the plant still being an apprentice, I fulfilled a lead role for journeyman carpenters new to the job site. I'm still great friends with Bill Newton, the man who introduced me to the trade, and many of the individuals I worked together within carpentry today.
               </p>
-              <button type='submit' className='close-details red-glow-text' onClick={ this.carpentryToggle }>
+              <button
+                type='submit'
+                className='close-details red-glow-text'
+                aria-label='close carpentry details'
+                aria-controls='carpentry info'
+                aria-expanded='true'
+                onClick={ this.carpentryToggle }
+              >
                 Close Details
               </button>
             </div>

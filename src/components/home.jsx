@@ -8,9 +8,11 @@ export default class Home extends React.Component {
     return (
       <div className='container-A'>
         <main className='container-B'>
-          <h3><img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
+          <h3>
+            <img className='dagger1' src={ dagger } alt='' rel='preload' />
             Home
-          <img className='dagger2' src={ dagger } alt='dagger' rel='preload' /></h3>
+            <img className='dagger2' src={ dagger } alt='' rel='preload' />
+          </h3>
           <section>
             <div className='center-wrap'>
               <h4>Introduction</h4>
@@ -19,7 +21,7 @@ export default class Home extends React.Component {
                   className='dark-glow-image'
                   id='profile'
                   src={ profile }
-                  alt='self image'
+                  alt='Miles Mickelson portrait'
                   rel='preload'
                 />
                 <p id='intro-info'>

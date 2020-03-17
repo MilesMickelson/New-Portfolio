@@ -803,8 +803,7 @@ summary {
 }
 
 .spyglass {
-	width: calc(1.75rem + 2vmin);
-	min-width: 25px;
+	width: calc(1.6rem + 2vmin);
 	max-width: 45px;
 	transform: rotate(295deg);
 	vertical-align: middle;
@@ -812,8 +811,7 @@ summary {
 }
 
 .hidden-spyglass {
-	width: calc(1.75rem + 2vmin);
-	min-width: 25px;
+	width: calc(1.6rem + 2vmin);
 	max-width: 45px;
 	transform: rotate(295deg);
 	vertical-align: middle;
@@ -822,7 +820,7 @@ summary {
 }
 
 #resume-link {
-	font-family: NugieRegular;
+	@include pirate-reg;
 	color: $red5;
 	font-size: calc(1.35rem + 1.5vmin);
 	vertical-align: middle;
@@ -862,11 +860,7 @@ summary {
 }
 
 #breakline2 {
-	width: 96%;
-	min-width: 372.5px;
-	max-width: 950px;
-	min-height: 25px;
-	max-height: 42px;
+	width: 100%;
 	transform: rotate(180deg);
 	margin-top: 20px;
 }

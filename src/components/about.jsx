@@ -8,9 +8,11 @@ export default class About extends React.Component {
     return (
       <div className='container-A'>
         <main className='container-B'>
-          <h3><img className='dagger1' src={ dagger } alt='dagger' rel='preload' />
+          <h3>
+            <img className='dagger1' src={ dagger } alt='' rel='preload' />
             About
-          <img className='dagger2' src={ dagger } alt='dagger' rel='preload' /></h3>
+            <img className='dagger2' src={ dagger } alt='' rel='preload' />
+          </h3>
           <section className='center-wrap'>
             <h4>
               Ambition

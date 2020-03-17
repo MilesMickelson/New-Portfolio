@@ -19,60 +19,50 @@ export default class Footer extends React.Component {
               href='https://drive.google.com/file/d/1Ck6VwC7QesQpox1FijtzQNSBhzMdNuOF/view?usp=sharing'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='resume link'
               title='Resume PDF'
             >
-              <img className='spyglass' src={ spyglass } alt='spyglass' />
+              <img className='spyglass' src={ spyglass } alt='' />
               View Resume PDF
-              <img className='hidden-spyglass' src={ spyglass } alt='spyglass' />
+              <img className='hidden-spyglass' src={ spyglass } alt='' />
             </a>
           </div>
           <div className='center-wrap'>
-            <img id='breakline2' src={ breakline2 } alt='breakline' />
+            <img id='breakline2' src={ breakline2 } alt='' />
           </div>
           <div id='glyph-wrap'>
             <a
               href='https://www.linkedin.com/in/milesmickelson/'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='linkedin account link'
-              title='LinkedIn Account'
             >
-              <img className='glyph' id='linkedin' src={ linkedin } alt='linkedin' />
+              <img className='glyph' id='linkedin' src={ linkedin } alt='LinkedIn' />
             </a>
             <a
               href='https://github.com/MilesMickelson'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='github account link'
-              title='GitHub Account'
             >
               <img className='glyph' id='github' src={ github } alt='GitHub' />
             </a>
             <a
               href='mailto:milesmickelson87@gmail.com'
               aria-label='send email link'
-              title='Send Email'
             >
-              <img id='pigeon' src={ pigeon } alt='email' />
+              <img id='pigeon' src={ pigeon } alt='Email' />
             </a>
             <a
               href='https://medium.com/@milesmickelson87'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='medium account link'
-              title='Medium Account'
             >
-              <img className='glyph' id='medium' src={ medium } alt='medium' />
+              <img className='glyph' id='medium' src={ medium } alt='Medium' />
             </a>
             <a
               href='https://www.youtube.com/channel/UCAnL9rFU-4ycu4Lmu08-pkw?view_as=public'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='youtube account link'
-              title='YouTube Account'
             >
-              <img className='glyph' id='youtube' src={ youtube } alt='youtube' />
+              <img className='glyph' id='youtube' src={ youtube } alt='YouTube' />
             </a>
           </div>
         </div>

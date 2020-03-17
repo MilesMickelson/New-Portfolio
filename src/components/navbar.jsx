@@ -61,75 +61,75 @@ export default class NavBar extends React.Component {
     return (
       <div className='container-A'>
         <div className='container-B'>
-          <header id='navlabels-wrap'>
+          <div id='navlabels-wrap'>
             <em id='home'>Home</em>
             <em id='projects'>Projects</em>
             <em id='credentials'>Credentials</em>
             <em id='about'>About</em>
-          </header>
+          </div>
           <nav id='nav-wrap' aria-label='primary'>
             <a 
               title='Home Page'
               href='#/'
-              aria-current='page'
+              rel='noopener noreferrer'
               onClick={ this.toggleHome }
             >
             <img
               className={ `nav-icon ${this.state.home ? 'isSpinning' : 'notSpinning'}` }
               id='wheel'
               src={ wheel }
-              alt='ship wheel'
+              alt='Home'
               rel='preload'
             />
             </a>
             <a
-              onClick={ this.toggleProjects }
               title='Projects Page'
               href='#/Projects'
-              aria-current='page'
+              rel='noopener noreferrer'
+              onClick={ this.toggleProjects }
               >
               <img
                 className={ `nav-icon ${this.state.projects ? 'inVisible' : 'visible'}` }
                 src={ closedChest }
                 id='closed-chest'
-                alt='closed chest'
+                alt='Projects'
                 rel='preload'
               />
               <img
                 className={ `nav-icon ${this.state.projects ? 'visible' : 'inVisible'}` }
                 src={ openChest }
                 id='open-chest'
-                alt='chest'
+                alt='Projects'
                 rel='preload'
               />
             </a>
             <a
-              onClick={ this.toggleCredentials }
               title='Credentials Page'
               href='#/Credentials'
-              aria-current='page'
+              rel='noopener noreferrer'
+              onClick={ this.toggleCredentials }
             >
               <div id='swivel-wrap'>
               <img
                 className={ `nav-icon ${this.state.credentials ? 'swivel' : 'noSwivel'}` } 
                 src={ coin }
                 id='coin'
-                alt='pirate coin'
+                alt='Credentials'
                 rel='preload'
               />
               </div>
             </a>
             <a
-              onClick={ this.toggleAbout }
               title='About Page'
               href='#/About'
-              aria-current='page'
+              rel='noopener noreferrer'
+              onClick={ this.toggleAbout }
             >
               <img
                 className={ `nav-icon ${this.state.about ? 'ghost-pirate' : 'plain-pirate'}` }
                 src={ pirate }
                 id='pirate'
-                alt='pirate skull'
+                alt='About'
                 rel='preload'
               />
             </a>
