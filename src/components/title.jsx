@@ -22,15 +22,13 @@ export default class Title extends React.Component {
             <h2 id='sub-title'>Fullstack&nbsp;Developer</h2>
             <img id='breakline1' src={ breakline1 } alt='' />
           </div>
-        </header>
-        <div className='container-B'>
           <div id='navlabels-wrap'>
             <em id='home'>Home</em>
             <em id='projects'>Projects</em>
             <em id='credentials'>Credentials</em>
             <em id='about'>About</em>
           </div>
-        </div>
+        </header>
       </div>
     );
   }

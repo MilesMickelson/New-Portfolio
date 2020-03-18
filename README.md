@@ -2,19 +2,16 @@
 
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
-Thank you for your interest in myself and this website, I took enjoyment in the developing process and acquired a myriad of knowledge and tools along the way. My mission for this project was to complete a website built with the result being one of high performance, optimization, proper accessibility, and include an entertaining theme. Built with Node, React, Parcel, and Sass, and a customized ES-Lint AirBNB configuration for clean and purposeful code. The website is 100% responsive across all devices and screen sizes without a single media query; while also maintaining maximum browser compatibility and a brand logo for every space. Implementing the lighthouse tool to audit and review its feedback, I was able to maximize performance, accessibility, best practices, and search engine optimization. Google analytics informative data collection will support continuous improvement.
+Thank you for your interest in myself and this website, I took enjoyment in the developing process and acquired a myriad of knowledge and tools along the way. My mission for this project was to develop a high quality website and showcase my creative abilities. To do so, I used Node, React, Parcel, Sass, and a custom ES-Lint AirBNB configuration for clean and concise code. This website is fully responsive across all screen sizes, without the use of a single media query, and maintain utmost browser compatibility. I was able to maximize performance, accessibility, best practices, and search engine optimization by utilizing the Lighthouse module. The final audit score and details are outlined below. Further, Google analytics informative data collection will support continuous improvement.
 
 * **Thank you**, ***-Miles Mickelson***
 
 <!-- TODO's -->
 
-# 1.
---Rename files after deployment
-
-# 2.
 --Icon & art accrediting
 
 * *Improvements*
+--"Bubbling animation to audit score img
 --HMR, with Express?
 --Dynamic animations of nav-icons based on path/location instead of boolean
 --Gradient background behind parchment image

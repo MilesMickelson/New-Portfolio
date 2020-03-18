@@ -92,7 +92,7 @@ export default class Projects extends React.Component {
           <section className='center-wrap'>
             <h4>MilesMickelson.com</h4>
             <p>
-              My mission for this project was to develop a high quality website and showcase my creative abilities. To do so, I used Node, React, Parcel, Sass, and a custom ES-Lint AirBNB configuration for clean and concise code. This website is fully responsive across all screen sizes, without the use of a single media query, and maintain utmost browser compatibility. I was able to maximize performance, accessibility, best practices, and search engine optimization by utilizing the Lighthouse module. The final audit score and details are outlined below. Further, Google analytics informative data collection will support continuous improvement
+              My mission for this project was to develop a high-quality website and showcase my creative abilities. To do so, I used Node, React, Parcel, Sass, and a custom ES-Lint AirBNB configuration for clean and concise code. This website is fully responsive across all screen sizes, without the use of a single media query, and maintains the utmost browser compatibility. I was able to maximize performance, accessibility, best practices, and search engine optimization by utilizing the Lighthouse module, the final audit score–and outline, displayed below. Further, Google analytics data statistics providing support for continuous improvement
               <a
                 href='https://github.com/MilesMickelson/MilesMickelson.github.io'
                 className='post-link'
@@ -148,7 +148,7 @@ export default class Projects extends React.Component {
               </ul>
               <div className={ `${this.state.tealiumInfo ? 'visible' : 'inVisible'}` }> 
                 <p id='tealium info' tabIndex='0'>
-                  At the 2018 Tealium Hackathon event, my team built a customer data statistic display tool to give Tealium an added service for their clients, supplying them a way to achieve coordinated marketing strategies through a simple information viewing system. As a result of our quality interface, overall presentation, and camaraderie, we finished in the top 3 finalists. My responsibilities were designing the user interface and presenting our project to a panel judges
+                  At the 2018 Tealium Hackathon event, my team built a customer data statistic display tool to give Tealium an added service for their clients, supplying them a way to achieve coordinated marketing strategies through a simple information viewing system. As a result of our quality interface, overall presentation, and camaraderie, we finished in the top 3 finalists. My responsibilities were designing the user interface and presenting our project to a panel of judges
                   <a
                     href='https://github.com/MilesMickelson/tealium-hackathon'
                     rel='noopener noreferrer'
@@ -278,7 +278,7 @@ export default class Projects extends React.Component {
               </ul>
               <div className={ `${this.state.studentTrackerInfo ? 'visible' : 'inVisible'}` }>                
                 <p id='student tracker info' tabIndex='0'>
-                My final SDCS group project engaged numerous technologies simultaneously, built with React/Redux, MongoDB, Loopback, and various API's. Planning and workflow executed with Git, Scrum, and Agile. We successfully integrated a custom command into the school's slack workspace to input your information and have it saved to a database, which allows both the administration and students to view their current progress trend on a dashboard. Was individually responsible for incorporating the Github API for feedback on total commits in the last seven days–private school repository.
+                My final SDCS group project employed numerous technologies, built with React, Redux, MongoDB, Loopback, and various API's, executed with an Agile workflow. We successfully integrated a custom command into the school's slack workspace to input your information and have it saved to a database, allowing both the administration and students to view current progress trends on their dashboard. Was individually responsible for incorporating the GitHub API for displaying the total commits in the last seven days.
                 </p>
               </div>
             </div>
