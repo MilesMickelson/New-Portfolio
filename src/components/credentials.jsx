@@ -57,7 +57,7 @@ export default class Credentials extends React.Component {
                 <li 
                   className='first-item'
                 >
-                Medium: Hacking the Developers Toolbox - Coming Soon!
+                Medium: Hacking the Developers Toolbox–Coming Soon!
                 </li>
                 <li className='list-item-link'>
                   <a
@@ -70,7 +70,7 @@ export default class Credentials extends React.Component {
                     Medium: Journey Through Code School Bootcamp
                   </a>
                 </li>
-                <li>YouTube: Demonstration of Cheryl Lee's Website - Coming Soon!</li>
+                <li>YouTube: Demonstration of Cheryl Lee's Website–Coming Soon!</li>
               </ul>
             </div>
           </section>
@@ -105,7 +105,7 @@ export default class Credentials extends React.Component {
                     aria-controls='speakeasy-info'
                     aria-expanded='false'
                   >
-                  Speakeasy Bartending - View Details
+                  Speakeasy Bartending –View Details
                   </button>
                 </li>
               </ul>
@@ -126,7 +126,7 @@ export default class Credentials extends React.Component {
                     aria-expanded='true'
                     onClick={ this.speakeasyToggle }
                   >
-                    Close Details
+                  Close Details
                   </button>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default class Credentials extends React.Component {
                     aria-controls='machining info'
                     aria-expanded='false'
                   >
-                  Machine Operations - View Details
+                  Machine Operations –View Details
                   </button>
                 </li>
               </ul>
@@ -160,7 +160,7 @@ export default class Credentials extends React.Component {
                 aria-expanded='true'
                 onClick={ this.machiningToggle }
               >
-                Close Details
+              Close Details
               </button>
             </div>
             <div className='large-list-wrap'>
@@ -174,7 +174,7 @@ export default class Credentials extends React.Component {
                     aria-controls='carpentry info'
                     aria-expanded='false'
                   >
-                  Union Carpentry - View Details
+                  Union Carpentry –View Details
                   </button>
                 </li>
               </ul>
@@ -192,7 +192,7 @@ export default class Credentials extends React.Component {
                 aria-expanded='true'
                 onClick={ this.carpentryToggle }
               >
-                Close Details
+              Close Details
               </button>
             </div>
           </section>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const dagger = require('../images/dagger.png');
-const audit = require('../images/audit.png');
+const audit = require('../images/audit.jpg');
 
 export default class Projects extends React.Component {
   constructor(props) {
@@ -122,8 +122,7 @@ export default class Projects extends React.Component {
             <h4>Hackathon Events</h4>
             <div className='large-list-wrap'>
               <ul>
-                <li>
-                  The Total Machine - 
+                <li>The Total Machine
                   <button
                     type='submit'
                     className={ `details-button ${this.state.tealiumInfo ? 'inVisible' : 'visible'}` }
@@ -131,9 +130,7 @@ export default class Projects extends React.Component {
                     aria-label='view project details'
                     aria-controls='tealium info'
                     aria-expanded='false'
-                  >
-                    View Details
-                  </button>
+                  >–View Details</button>
                   <button
                     type='submit'
                     className={ `details-button ${this.state.tealiumInfo ? 'visible' : 'inVisible'}` }
@@ -142,7 +139,7 @@ export default class Projects extends React.Component {
                     aria-controls='tealium info'
                     aria-expanded='true'
                   >
-                    Close Details
+                  –Close Details
                   </button>
                 </li>
               </ul>
@@ -164,7 +161,7 @@ export default class Projects extends React.Component {
             <div className='large-list-wrap'>
               <ul>
                 <li>
-                  Ranger Radar - 
+                  Ranger Radar
                   <button
                     type='submit'
                     className={ `details-button ${this.state.rangerRadarInfo ? 'inVisible' : 'visible'}` }
@@ -173,7 +170,7 @@ export default class Projects extends React.Component {
                     aria-controls='ranger radar info'
                     aria-expanded='false'
                   >
-                    View Details
+                  –View Details
                   </button>
                   <button
                     type='submit'
@@ -183,7 +180,7 @@ export default class Projects extends React.Component {
                     aria-controls='ranger radar info'
                     aria-expanded='true'
                   >
-                    Close Details
+                  –Close Details
                   </button>
                 </li>
               </ul>
@@ -212,7 +209,7 @@ export default class Projects extends React.Component {
             <div className='large-list-wrap'>
               <ul>
                 <li>
-                  Cheryl Lee's Custom Portfolio Website - 
+                  Cheryl Lee's Custom Portfolio Website
                   <button
                     type='submit'
                     className={ `details-button ${this.state.cherylLeeInfo ? 'inVisible' : 'visible'}` }
@@ -221,7 +218,7 @@ export default class Projects extends React.Component {
                     aria-controls='cheryl lees info'
                     aria-expanded='false'
                   >
-                    View Details
+                  –View Details
                   </button>
                   <button
                     type='submit'
@@ -231,7 +228,7 @@ export default class Projects extends React.Component {
                     aria-controls='cheryl lees info'
                     aria-expanded='true'
                   >
-                    Close Details
+                  –Close Details
                   </button>
                 </li>
               </ul>
@@ -253,7 +250,7 @@ export default class Projects extends React.Component {
             <div className='large-list-wrap'>
               <ul>
                 <li>
-                  SDCS Student Tracker -
+                  SDCS Student Tracker
                   <button
                     type='submit'
                     className={ `details-button ${this.state.studentTrackerInfo ? 'inVisible' : 'visible'}` }
@@ -262,7 +259,7 @@ export default class Projects extends React.Component {
                     aria-controls='student tracker info'
                     aria-expanded='false'
                   >
-                    View Details
+                  –View Details
                   </button>
                   <button
                     type='submit'
@@ -272,7 +269,7 @@ export default class Projects extends React.Component {
                     aria-controls='student-tracker-info'
                     aria-expanded='true'
                   >
-                    Close Details
+                  –Close Details
                   </button>
                 </li>
               </ul>
@@ -285,7 +282,7 @@ export default class Projects extends React.Component {
             <div className='large-list-wrap'>
               <ul>
                 <li>
-                  NASA Viewer - 
+                  NASA Viewer
                   <button
                     type='submit'
                     className={ `details-button ${this.state.nasaViewerInfo ? 'inVisible' : 'visible'}` }
@@ -294,7 +291,7 @@ export default class Projects extends React.Component {
                     aria-controls='nasa viewer info'
                     aria-expanded='false'
                   >
-                    View Details
+                  –View Details
                   </button>
                   <button
                     type='submit'
@@ -304,7 +301,7 @@ export default class Projects extends React.Component {
                     aria-controls='student tracker info'
                     aria-expanded='true'
                   >
-                    Close Details
+                  –Close Details
                   </button>
                 </li>
               </ul>
@@ -325,7 +322,7 @@ export default class Projects extends React.Component {
             <div className='large-list-wrap'>
               <ul>
                 <li>
-                  Movie Finder - 
+                  Movie Finder
                   <button
                     type='submit'
                     className={ `details-button ${this.state.movieFinderInfo ? 'inVisible' : 'visible'}` }
@@ -334,7 +331,7 @@ export default class Projects extends React.Component {
                     aria-controls='movie finder info'
                     aria-expanded='false'
                   >
-                    View Details
+                  –View Details
                   </button>
                   <button
                     type='submit'
@@ -344,7 +341,7 @@ export default class Projects extends React.Component {
                     aria-controls='movie finder info'
                     aria-expanded='true'
                   >
-                    Close Details
+                  –Close Details
                   </button>
                 </li>
               </ul>
@@ -365,7 +362,7 @@ export default class Projects extends React.Component {
             <div className='large-list-wrap'>
               <ul>
                 <li className='last-item'>
-                  Weather App - 
+                  Weather App
                   <button
                     type='submit'
                     className={ `details-button ${this.state.weatherAppInfo ? 'inVisible' : 'visible'}` }
@@ -374,7 +371,7 @@ export default class Projects extends React.Component {
                     aria-controls='weather app info'
                     aria-expanded='false'
                   >
-                    View Details
+                  –View Details
                   </button>
                   <button
                     type='submit'
@@ -384,7 +381,7 @@ export default class Projects extends React.Component {
                     aria-controls='weather app info'
                     aria-expanded='true'
                   >
-                    Close Details
+                  –Close Details
                   </button>
                 </li>
               </ul>

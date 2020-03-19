@@ -13,18 +13,14 @@ export default class About extends React.Component {
             About
             <img className='dagger2' src={ dagger } alt='' />
           </h3>
-          <section className='center-wrap'>
-            <h4>
-              Ambition
-            </h4>
+          <section>
+            <h4>Ambition</h4>
             <p>
               Miles Mickelson, born in Sacramento, California, is currently residing in San Diego and looking to fulfill a position as a full-stack junior developer. I am bound and determined to become the best developer that I can be. And I believe that taking my strengths and variety of work experience into account, it can culminate into becoming a valuable asset for anyone who employs me. It would bring me great satisfaction to produce valuable results that have a positive impact on business and people's lives.
             </p>
           </section>
-          <section className='center-wrap'>
-            <h4>
-              Philosophy
-            </h4>
+          <section>
+            <h4>Philosophy</h4>
             <p>
               To achieve success in your venture, it comes down to daily habitual routines and a persevering mindset. I genuinely believe in being highly organized, coordinated, efficient, and maintaining specific goals throughout the planning and execution process.
             </p>

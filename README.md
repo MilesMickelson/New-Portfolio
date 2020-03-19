@@ -8,17 +8,17 @@ Thank you for your interest in myself and this website, I took enjoyment in the 
 
 <!-- TODO's -->
 --icon & art accrediting
+--all favicons displaying
 
 * *Improvements*
---"Bubbling animation to audit score img
+--Bubbling animation to audit score img
 --HMR, with Express?
 --Dynamic animations of nav-icons based on path/location instead of boolean
 --Gradient background behind parchment image
---Full Accessibility Testing
---Select improperly marginned list items with nth selectors
+--Select improperly margined list items with nth selectors
 
 * *Performance improvements*
 --Serve static assets with an efficient cache policy 22 resources found
 --Minimize main-thread work 3.4 s
 --Avoid chaining critical requests 2 chains found
---Keep request counts low and transfer sizes small 25 requests • 2,231 KB
+Keep request counts low and transfer sizes small 26 requests • 1,344 KB
