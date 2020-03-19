@@ -1,7 +1,7 @@
 import React from 'react';
 
 const dagger = require('../images/dagger.png');
-const profile = require('../images/profile.png');
+const profile = require('../images/profile.jpg');
 
 export default class Home extends React.Component {
   render() {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const dagger = require('../images/dagger.png');
-const pool = require('../images/pool.png');
+const pool = require('../images/pool.jpg');
 
 export default class About extends React.Component {
   render() {

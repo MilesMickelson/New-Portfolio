@@ -2,7 +2,7 @@ import React from 'react';
 
 const dagger = require('../images/dagger.png');
 const spyglass = require('../images/spyglass.png');
-const speakeasy = require('../images/speakeasy.png');
+const speakeasy = require('../images/speakeasy.jpg');
 
 export default class Credentials extends React.Component {
   constructor(props) {
