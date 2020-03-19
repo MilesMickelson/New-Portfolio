@@ -73,7 +73,6 @@ export default class NavBar extends React.Component {
               id='wheel'
               src={ wheel }
               alt='Home'
-              rel='preload'
             />
             </a>
             <a
@@ -87,14 +86,12 @@ export default class NavBar extends React.Component {
                 src={ closedChest }
                 id='closed-chest'
                 alt='Projects'
-                rel='preload'
               />
               <img
                 className={ `nav-icon ${this.state.projects ? 'visible' : 'inVisible'}` }
                 src={ openChest }
                 id='open-chest'
                 alt='Projects'
-                rel='preload'
               />
             </a>
             <a
@@ -109,7 +106,6 @@ export default class NavBar extends React.Component {
                 src={ coin }
                 id='coin'
                 alt='Credentials'
-                rel='preload'
               />
               </div>
             </a>
@@ -124,7 +120,6 @@ export default class NavBar extends React.Component {
                 src={ pirate }
                 id='pirate'
                 alt='About'
-                rel='preload'
               />
             </a>
           </nav>

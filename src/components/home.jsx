@@ -9,9 +9,9 @@ export default class Home extends React.Component {
       <div className='container-A'>
         <main className='container-B'>
           <h3>
-            <img className='dagger1' src={ dagger } alt='' rel='preload' />
+            <img className='dagger1' src={ dagger } alt='' />
             Home
-            <img className='dagger2' src={ dagger } alt='' rel='preload' />
+            <img className='dagger2' src={ dagger } alt='' />
           </h3>
           <section>
             <div className='center-wrap'>
@@ -22,7 +22,6 @@ export default class Home extends React.Component {
                   id='profile'
                   src={ profile }
                   alt='Miles Mickelson portrait'
-                  rel='preload'
                 />
                 <p id='intro-info'>
                   Hi, I’m Miles Mickelson, and thank you for visiting my website dedicated to illustrating my skills, credentials, and shedding some light on who I am. I am currently looking to fulfill a fullstack junior developer position, preferably with various dynamic roles, on an ambitious team with consistent, high-quality output and great camaraderie. I highly value learning from a senior engineer’s counsel and gaining insight for growth and direction. Please feel free to review my accounts displayed in the footer, and contact me at any time.

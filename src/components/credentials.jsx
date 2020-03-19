@@ -2,7 +2,7 @@ import React from 'react';
 
 const dagger = require('../images/dagger.png');
 const spyglass = require('../images/spyglass.png');
-const speakeasy = require('../images/speakeasy.jps');
+const speakeasy = require('../images/speakeasy.png');
 
 export default class Credentials extends React.Component {
   constructor(props) {
@@ -46,9 +46,9 @@ export default class Credentials extends React.Component {
       <div className='container-A'>
         <main className='container-B'>
           <h3>
-            <img className='dagger1' src={ dagger } alt='' rel='preload' />
+            <img className='dagger1' src={ dagger } alt='' />
             Credentials
-            <img className='dagger2' src={ dagger } alt='' rel='preload' />
+            <img className='dagger2' src={ dagger } alt='' />
           </h3>
           <section>
             <h4>Publications</h4>

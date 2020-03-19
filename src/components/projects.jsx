@@ -85,9 +85,9 @@ export default class Projects extends React.Component {
       <div className='container-A'>
         <main className='container-B'>
           <h3 aria-label='page title projects'>
-            <img className='dagger1' src={ dagger } alt='' rel='preload' />
+            <img className='dagger1' src={ dagger } alt='' />
             Projects
-            <img className='dagger2' src={ dagger } alt='' rel='preload' />
+            <img className='dagger2' src={ dagger } alt='' />
           </h3>
           <section className='center-wrap'>
             <h4>MilesMickelson.com</h4>

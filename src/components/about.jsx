@@ -1,7 +1,7 @@
 import React from 'react';
 
 const dagger = require('../images/dagger.png');
-const pool = require('../images/pool.jps');
+const pool = require('../images/pool.png');
 
 export default class About extends React.Component {
   render() {
@@ -9,9 +9,9 @@ export default class About extends React.Component {
       <div className='container-A'>
         <main className='container-B'>
           <h3>
-            <img className='dagger1' src={ dagger } alt='' rel='preload' />
+            <img className='dagger1' src={ dagger } alt='' />
             About
-            <img className='dagger2' src={ dagger } alt='' rel='preload' />
+            <img className='dagger2' src={ dagger } alt='' />
           </h3>
           <section className='center-wrap'>
             <h4>

@@ -7,8 +7,7 @@ Thank you for your interest in myself and this website, I took enjoyment in the 
 * **Thank you**, ***-Miles Mickelson***
 
 <!-- TODO's -->
-
---Icon & art accrediting
+--icon & art accrediting
 
 * *Improvements*
 --"Bubbling animation to audit score img
