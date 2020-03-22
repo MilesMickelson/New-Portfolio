@@ -17,19 +17,19 @@ export default class Home extends React.Component {
             <div className='center-wrap'>
               <h4>Introduction</h4>
               <div className='clearfix-wrap'>
-                <img 
+                <img
                   className='dark-glow-image'
                   id='profile'
                   src={ profile }
                   alt='Miles Mickelson portrait'
                 />
                 <p id='intro-info'>
-                  Hi, I’m Miles Mickelson, and thank you for visiting my website dedicated to illustrating my skills, credentials, and shedding some light on who I am. I am currently looking to fulfill a fullstack junior developer position, preferably with various dynamic roles, on an ambitious team with consistent, high-quality output and great camaraderie. I highly value learning from a senior engineer’s counsel and gaining insight for growth and direction. Please feel free to review my accounts displayed in the footer, and contact me at any time.
+                  Hi, I’m Miles Mickelson, thank you for visiting my website dedicated for illustrating my skills, credentials, and shedding some light on who I am. I’m looking to fulfill a front-end or full-stack junior developer position, preferably with a dynamic role on an ambitious team, with high-quality output, and great camaraderie. I genuinely value a senior engineer’s insight for betterment. Please, feel free to review my accounts displayed in the footer, and contact me any time.
                 </p>
               </div>
               <h4>Proficiencies</h4>
               <p>
-                I love to accept and embrace new challenges, so my potential is not limited to the languages and technologies listed below. I look forward to opportunities to test my knowledge and allow me to showcase my skills and ability to grow as a developer.
+                I love to embrace new challenges, so I'm always looking forward to opportunities that test my aptitude and allow me to grow as a developer. Therefore my potential is not limited to the languages and technologies listed here.
               </p>
             </div>
             <div id='prof-list-wrap'>

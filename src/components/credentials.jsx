@@ -1,7 +1,6 @@
 import React from 'react';
 
 const dagger = require('../images/dagger.png');
-const spyglass = require('../images/spyglass.png');
 const speakeasy = require('../images/speakeasy.jpg');
 
 export default class Credentials extends React.Component {
@@ -54,11 +53,7 @@ export default class Credentials extends React.Component {
             <h4>Publications</h4>
             <div className='large-list-wrap'>
               <ul>
-                <li 
-                  className='first-item'
-                >
-                Medium: Hacking the Developers Toolbox–Coming Soon!
-                </li>
+                <li>Medium: Hacking the Developers Toolbox–Coming Soon!</li>
                 <li className='list-item-link'>
                   <a
                     href='https://medium.com/@milesmickelson87/a-journey-through-coding-boot-camp-78c55f6b9a20'
@@ -76,24 +71,21 @@ export default class Credentials extends React.Component {
           </section>
           <section>
             <h4>Education</h4>
-              <div className='large-list-wrap'>
-                <ul>
-                  <li
-                    className='first-item'
-                  >
-                  San Diego Code School: Fullstack Developer, Graduated 2019
-                  </li>
-                  <li>Cicerone+Spirits Evaluator: Certified Lvl 1/Advanced, 2017</li>
-                  <li>San Diego Union Carpenters: Apprenticeship Lvl 6, 2006-12</li>
-                  <li>Las Vegas Dealers School: Certified Poker Dealer, 2010</li>
-                </ul>
-              </div>
+            <div className='large-list-wrap'>
+              <ul>
+                <li>San Diego Code School: Fullstack Developer, Graduated 2019</li>
+                <li>Cicerone+Spirits Evaluator: Certified Lvl 1/Advanced, 2017</li>
+                <li>San Diego Union Carpenters: Apprenticeship Lvl 6, 2006-12</li>
+                <li>Las Vegas Dealers School: Certified Poker Dealer, 2010</li>
+              </ul>
+            </div>
           </section>
           <section>
-              <h4>Experience</h4>
-              <p>
-                I have always had a highly motivated and self-disciplined personality, seeking the utmost professionalism and reliability in the workplace. Throughout a variety of demanding roles, I have been acknowledged for my capacity to build strong, collaborative relationships, and for an ability to accept a multitude of responsibilities. Furthermore, being touted for competence to lead in a team environment and work as a team player, making positive contributions to the success of our objective-read more below...
-              </p>
+            <h4>Experience</h4>
+            <p>
+              I have always had a highly motivated and self-disciplined personality, seeking the utmost professionalism and reliability in the workplace. Throughout a variety of demanding roles, I have been acknowledged for my capacity to build strong, collaborative relationships, and for an ability to accept a multitude of responsibilities. Furthermore, being touted for competence to lead in a team environment and work as a team player, bestowing positive contributions to the success of our objective
+              <i>–Read more below...</i>
+            </p>
             <div className='large-list-wrap'>
               <ul className={ `${this.state.speakeasyInfo ? 'inVisible' : 'visible'}` }>
                 <li>
@@ -105,12 +97,12 @@ export default class Credentials extends React.Component {
                     aria-controls='speakeasy-info'
                     aria-expanded='false'
                   >
-                  Speakeasy Bartending –View Details
+                  Speakeasy Bartending
                   </button>
                 </li>
               </ul>
             </div>
-            <div className={ `${this.state.speakeasyInfo ? 'visible' : 'inVisible'}` }> 
+            <div className={ `${this.state.speakeasyInfo ? 'visible' : 'inVisible'}` }>
               <h5>Lead Speakeasy Bartender</h5>
               <div className='clearfix-wrap'>
                 <img className='dark-glow-image' id='speakeasy-pic' src={ speakeasy } alt='speakeasy' />
@@ -118,7 +110,7 @@ export default class Credentials extends React.Component {
                   <p id='speakeasy-info' tabIndex='0'>
                     An unexpected opportunity arrived for me when a restaurant opened up in my neighborhood. I had never worked at one before but found myself hired as a busser & food runner over many applicants. Within a year, I was able to fill the role of server and positioned as barback per my request. After gaining knowledge through attending classes and learning on my own time, I earned a promotion to the speakeasy. Only the highest quality and most knowledgeable bartenders worked in there. Eventually, I secured the role of Lead Bartender, responsible for accommodating all private parties, weekly events, and maintaining an immaculate establishment. My service, passion, attention to detail, and memory for regular’s preferences allowed me to earn a reputation for a local’s favorite bartender, among many. Often working alone, my position required performing many roles and consistently methodical self-sufficiency.
                   </p>
-                  <button 
+                  <button
                     type='submit'
                     className='close-details red-glow-text'
                     aria-label='close bartending details'
@@ -142,7 +134,7 @@ export default class Credentials extends React.Component {
                     aria-controls='machining info'
                     aria-expanded='false'
                   >
-                  Machine Operations –View Details
+                  Machine Operations
                   </button>
                 </li>
               </ul>
@@ -150,7 +142,7 @@ export default class Credentials extends React.Component {
             <div className={ `center-wrap ${this.state.machiningInfo ? 'visible' : 'inVisible'}` }>
               <h5>Machine Operations Lead</h5>
               <p id='machining info' tabIndex='0'>
-                In 2012 an acquaintance of mine recommended me to a local sign shop where I was hired and started on the production floor. After earning trust and acknowledgment for high-quality output, within a few months, I trained to run every machine in the production room. I eventually gained responsibility for job planning workflow design, inventory management, materials procurement, and interdepartmental communication throughout the manufacturing process.
+                In 2012 an acquaintance of mine recommended me to a local sign shop where I was hired and started on the production floor. After earning trust and acknowledgment for high-quality output, within a few months, I trained to run every machine in the production room. I eventually gained responsibility for project workflow design, inventory management, materials procurement, and interdepartmental communication throughout the manufacturing process.
               </p>
               <button
                 type='submit'
@@ -174,7 +166,7 @@ export default class Credentials extends React.Component {
                     aria-controls='carpentry info'
                     aria-expanded='false'
                   >
-                  Union Carpentry –View Details
+                  Union Carpentry
                   </button>
                 </li>
               </ul>
@@ -182,7 +174,7 @@ export default class Credentials extends React.Component {
             <div className={ `center-wrap ${this.state.carpentryInfo ? 'visible' : 'inVisible'}` }>
               <h5>Nuclear Carpenter</h5>
               <p id='carpentry info' tabIndex='0'>
-                At 16 years of age, I started my first business pressure washing for people in my neighborhood and simultaneously delivered for Pizza Hut after getting my license later. During this time, a neighbor took me under his wing and offered me an opportunity to work at the San Onofre Nuclear Power Plant. He was the highest-level manager for the Union Carpenter's Trade on site. During the first season, my role was supporting the tradesman. However, after being fully immersed 60 hours a week for over three months, I decided to go through the Union Carpenters apprenticeship. I was a carpenter for the next six years employed by many contractors doing finish, roofing, concrete, and scaffolding work. The reputation for my work ethic earned me recommendations from my foremen for almost every other job I worked as a carpenter. In my last season at the plant still being an apprentice, I fulfilled a lead role for journeyman carpenters new to the job site. I'm still great friends with Bill Newton, the man who introduced me to the trade, and many of the individuals I worked together within carpentry today.
+                At 16 years of age, I started my first business pressure washing for people in my neighborhood and simultaneously delivered for Pizza Hut after getting my license later. During this time, a neighbor, Bill Newton, took me under his wing and offered me an opportunity to work at the San Onofre Nuclear Power Plant. He was the highest-level manager for the Union Carpenter's Trade on site. During the first season, my role was supporting the tradesman. However, after being fully immersed 60 hours a week for over three months, I decided to go through the Union Carpenters apprenticeship. I was in the trade for the next six years employed by many contractors doing finish, roofing, concrete, and scaffolding work. The reputation for my work ethic earned me recommendations from many of my foremen on numerous job sites. During my last contract at the power plant, I fulfilled a lead role for journeyman carpenters new to the job site. I'm still great friends with Bill Newton, the man who introduced me to the trade, and many of the individuals I worked with together today.
               </p>
               <button
                 type='submit'

@@ -16,7 +16,7 @@ export default class Footer extends React.Component {
           <div id='resume-wrap' className='red-glow-text'>
             <a
               id='resume-link'
-              href='https://drive.google.com/file/d/1qeAsMT4RqFTB28Sq-zcZi4tH4ylnD8sK/view?usp=sharing'
+              href='https://drive.google.com/file/d/1vIXFTzxe7y8UqztB99G5wGjIrlPlAGUZ/view'
               target='_blank'
               rel='noopener noreferrer'
             >

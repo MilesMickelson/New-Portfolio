@@ -62,25 +62,25 @@ export default class NavBar extends React.Component {
       <div className='container-A'>
         <div className='container-B'>
           <nav id='nav-wrap' aria-label='primary'>
-            <a 
+            <a
               title='Home Page'
               href='#/'
               rel='noopener noreferrer'
               onClick={ this.toggleHome }
             >
-            <img
-              className={ `nav-icon ${this.state.home ? 'isSpinning' : 'notSpinning'}` }
-              id='wheel'
-              src={ wheel }
-              alt='Home'
-            />
+              <img
+                className={ `nav-icon ${this.state.home ? 'isSpinning' : 'notSpinning'}` }
+                id='wheel'
+                src={ wheel }
+                alt='Home'
+              />
             </a>
             <a
               title='Projects Page'
               href='#/Projects'
               rel='noopener noreferrer'
               onClick={ this.toggleProjects }
-              >
+            >
               <img
                 className={ `nav-icon ${this.state.projects ? 'inVisible' : 'visible'}` }
                 src={ closedChest }
@@ -101,12 +101,12 @@ export default class NavBar extends React.Component {
               onClick={ this.toggleCredentials }
             >
               <div id='swivel-wrap'>
-              <img
-                className={ `nav-icon ${this.state.credentials ? 'swivel' : 'noSwivel'}` } 
-                src={ coin }
-                id='coin'
-                alt='Credentials'
-              />
+                <img
+                  className={ `nav-icon ${this.state.credentials ? 'swivel' : 'noSwivel'}` }
+                  src={ coin }
+                  id='coin'
+                  alt='Credentials'
+                />
               </div>
             </a>
             <a

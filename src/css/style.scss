@@ -1,4 +1,6 @@
-/*#region Scaffolding*/
+/*#region Global Styling*/
+
+//-----SCAFFOLDING-----
 
 .container-A {
 	width: 100%;
@@ -19,18 +21,10 @@
 
 @mixin col-center {
 	display: flex;
-	flex-flow: col wrap;
+	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 }
-
-.center-wrap {
-	text-align: center;
-}
-
-/*#endregion Scaffolding*/
-
-/*#region Global Styling*/
 
 //-----COLORS-----
 
@@ -93,6 +87,8 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 	font-family: $primary-font;
 }
 
+//-----ANIMATIONS-----
+
 .dark-glow-image {
   animation: dark-glow-image 1s ease-in-out infinite alternate;
   -webkit-animation: dark-glow-image 1s ease-in-out infinite alternate;
@@ -130,6 +126,29 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
   cursor: url(../images/cursor.png), crosshair;
 }
 
+//-----COMMON STYLING-----
+
+.visible {
+	display: normal;
+}
+
+.inVisible {
+	display: none;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.center-wrap {
+	text-align: center;
+}
+
+.button-wrap {
+	text-align: center;
+	margin-top: 10px;
+}
+
 .dagger1 {
 	width: 43px;
 	vertical-align: middle;
@@ -144,51 +163,48 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 	margin-left: 20px;
 }
 
-.visible {
-	display: normal;
-}
-
-.inVisible {
-	display: none;
-}
-
-.hidden {
-	visibility: hidden;
-}
-
-.button-wrap {
-	@include col-center;
-	margin-top: 15px;
-	vertical-align: middle;
-	text-align: center;
-}
-
-.large-list-wrap {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-  padding: 0 5%;
-  font-size: calc(1rem + 1.25vmin);
-}
-
-.small-list-wrap {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: flex-start;
-  padding: 0 5%;
-	font-size: calc(1rem + 1.25vmin);
-}
-
 .list-item-link {
 	@include pirate-reg;
 	color: $red30;
 	font-size: calc(1rem + 1.25vmin);
 }
 
-.first-item {
-  margin-top: 5px;
+.large-list-wrap {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	// list-style-position: inside;
+  font-size: calc(1rem + 1.25vmin);
+	// padding-left: 3.02em;
+	// text-indent: -3.02em;
+}
+
+.details-button {
+  @include pirate-reg;
+	font-size: calc(1rem + 1.25vmin);
+	text-decoration: underline;
+	color: $red30;
+	background: transparent;
+	border: none;
+}
+
+.close-details {
+  @include pirate-reg;
+	font-size: calc(1.1rem + 1vmin);
+	background: transparent;
+	border: 3px solid $red20;
+	padding: 7px;
+	border-radius: 7px;
+	margin: 10px auto 0;
+}
+
+.details-button:hover {
+  @include cursor;
+}
+
+.close-details:hover {
+  @include cursor;
 }
 
 .clearfix-wrap::after {
@@ -306,24 +322,16 @@ p {
 }
 
 ol {
-  display: run-in;
   list-style-type: decimal;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
+	display: visible;
 	@include pirate-reg;
 	list-style-image: url('../images/smallsword.png');
-	display: run-in;
-	list-style-type: disc;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
+  padding: 0;
   padding-left: 40px;
 	margin: 0 0 0 30px;
 }
@@ -713,9 +721,13 @@ summary {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: flex-start;
-  padding: 0 5%;
 	margin-top: 10px;
+	padding-left: 2%;
 	font-size: calc(1.25rem + 1.5vmin);
+}
+
+.first-item {
+  margin-top: 10px;
 }
 
 .last-item {
@@ -726,20 +738,9 @@ summary {
 
 /*#region Projects Page*/
 
-.details-button {  
-  @include pirate-reg;
-	@include cursor;
-	font-size: calc(1.2rem + 1vmin);
-	text-decoration: underline;
-	color: $red30;
-	background: none;
-	border: none;
-}
-
 #audit {
 	width: calc(200px + 40vmin);
 	min-width: 375px;
-	max-width: 575px;
 	margin: 15px auto 0;
 }
 
@@ -761,20 +762,6 @@ summary {
 	min-width: 110px;
 	max-width: 170px;
 	margin: 5px 8px 4px 0;
-}
-
-.close-details {
-  @include pirate-reg;
-	font-size: calc(1.1rem + 1vmin);
-	background: transparent;
-	border: 3px solid $red25;
-	padding: 7px;
-	border-radius: 7px;
-	margin-top: 10px;
-}
-
-.close-details:hover {
-  @include cursor;
 }
 
 /*#endregion Credentials Page*/
@@ -865,7 +852,7 @@ summary {
 
 #glyph-wrap {
 	display: flex;
-	flex-flow: col wrap;
+	flex-flow: row wrap;
 	justify-content: space-around;
 	align-items: center;
 	vertical-align: middle;
