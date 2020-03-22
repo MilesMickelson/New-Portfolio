@@ -216,9 +216,6 @@ export default class Projects extends React.Component {
           </section>
           <section>
             <h4>Code School Highlights</h4>
-            <p>
-              I am very proud of how much I learned and gained both professionally and personally attending San Diego Code School. Below are a few projects I'm fond of with a description and a link to their Github repository where available, thanks for viewing.
-            </p>
             <div className='large-list-wrap'>
               <ul>
                 <li>
@@ -313,7 +310,7 @@ export default class Projects extends React.Component {
               </ul>
               <div className={ `${this.state.nasaViewerInfo ? 'visible' : 'inVisible'}` }>
                 <p id='nasa viewer info' tabIndex='0'>
-                  A React project, allows users to view the NASA astronomy picture of the day and read all information conveyed with it. Axios integrated on the server-side to fulfill the API call to the NASA database and a theme for the user interface to match
+                  This was a React100 project, allowing users to view the NASA astronomy picture of the day and read all information conveyed with it. Axios integrated on the server-side to fulfill the API call to the NASA database and a theme for the user interface to match
                   <a
                     href='https://github.com/MilesMickelson/NASA-Viewer'
                     target='_blank'
@@ -356,7 +353,7 @@ export default class Projects extends React.Component {
               </ul>
               <div className={ `${this.state.movieFinderInfo ? 'visible' : 'inVisible'}` }>
                 <p id='movie finder info' tabIndex='0'>
-                  React/Redux app for movie searching, implemented with React router for navigating to a second movie details page. Making the API call to an online movie database is fulfilled with Axios on the server-side,  integrated into the front end's search bar. Pulls results from a data cache if recently searched for in the last 24 hours to save hitting the API too frequently
+                  This is a React200 Redux app for movie searching, implemented with React router for navigating to a second movie details page. Making the API call to an online movie database is fulfilled with Axios on the server-side,  integrated into the front end's search bar. Pulls results from a data cache if recently searched for in the last 24 hours to save hitting the API too frequently
                   <a
                     href='https://github.com/MilesMickelson/REACT200-Movie-Finder'
                     target='_blank'
@@ -399,7 +396,7 @@ export default class Projects extends React.Component {
               </ul>
               <div className={ `${this.state.weatherAppInfo ? 'visible' : 'inVisible'}` }>
                 <p id='weather app info' tabIndex='0'>
-                  React/Redux single page web app allows users to search for a multitude of current weather information in any city by name, including default city buttons and recent search history. Making the API call to an online weather database is fulfilled with Axios on the server-side,  integrated into the front end's search bar. Pulls results from a data cache if recently searched for in the last 24 hours to save hitting the API too frequently
+                  This is also a React200 Redux single page web app allowing users to search for a multitude of current weather information in any city by name, including default city buttons and recent search history. Making the API call to an online weather database is fulfilled with Axios on the server-side,  integrated into the front end's search bar. Pulls results from a data cache if recently searched for in the last 24 hours to save hitting the API too frequently
                   <a
                     href='https://github.com/MilesMickelson/REACT200-Weather-App'
                     target='_blank'
