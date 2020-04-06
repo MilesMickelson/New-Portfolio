@@ -242,7 +242,7 @@ export default class Projects extends React.Component {
                     aria-label='view cheryl lee project repository link'
                   >
                     <i>
-                    –view repository.
+                    –view demo repository.
                     </i>
                   </a>
                 </p>
@@ -277,8 +277,19 @@ export default class Projects extends React.Component {
               </ul>
               <div className={ `${this.state.studentTrackerInfo ? 'visible' : 'inVisible'}` }>
                 <p id='student tracker info' tabIndex='0'>
-                My final SDCS group project employed numerous technologies, built with React, Redux, MongoDB, Loopback, and various API's, executed with an Agile workflow. We successfully integrated a custom command into the school's slack workspace where information could be entered and thereby saved to a database, further, implementing this data into a dashboard for individuals and administration to view current progress trends. I alone was responsible for incorporating the GitHub API for displaying the total commits in the last seven days.
+                My final SDCS group project employed numerous technologies, built with React, Redux, MongoDB, Loopback, and various API's, executed with an Agile workflow. We successfully integrated a custom command into the school's slack workspace where information could be entered and thereby saved to a database, further, implementing this data into a dashboard for individuals and administration to view current progress trends. I alone was responsible for incorporating the GitHub API for displaying the total commits in the last seven days. This is a private school project but you can 
                 </p>
+                <a
+                  href='https://docs.google.com/presentation/d/1iw3wiJjei8YvO2oOsxynlhbxU0ECeZ6zdyzsHLa7BvY/edit?usp=sharing'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                  title='Student Tracker school project presentation slides'
+                  aria-label='view student tracker presentation slides'
+                >
+                  <i>
+                  view our presentation slides here.
+                  </i>
+                </a>
                 <div className='button-wrap'>
                   <button
                     type='submit'

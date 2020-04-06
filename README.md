@@ -11,6 +11,7 @@ My mission for this project was to develop a high-quality website and showcase m
 
 * *Improvements*
 --Dynamic animations of nav-icons based on path/location instead of boolean
+-- CSS- text-underline-position: under;?
 
 * *Performance improvements*
 Serve static assets with an efficient cache policy 23 resources found

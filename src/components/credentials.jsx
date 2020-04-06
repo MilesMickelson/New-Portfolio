@@ -53,16 +53,26 @@ export default class Credentials extends React.Component {
             <h4>Publications</h4>
             <div className='large-list-wrap'>
               <ul>
-                <li>Medium: Hacking the Developers Toolbox–Coming Soon!</li>
                 <li className='list-item-link'>
                   <a
-                    href='https://medium.com/@milesmickelson87/a-journey-through-coding-boot-camp-78c55f6b9a20'
+                    href='https://medium.com/comprehensive-guide-to-the-ultimate-developers'
                     className='list-item-link'
                     target='_blank'
                     rel='noopener noreferrer preload'
-                    aria-label='medium code school article link'
+                    aria-label='medium developers tech article'
                   >
-                    Medium: Journey Through Code School Bootcamp
+                    Medium: Guide to the Ultimate Developers Tech
+                  </a>
+                </li>
+                <li className='list-item-link'>
+                  <a
+                    href='https://medium.com/an-exciting-new-career-from-bartender-to-developer'
+                    className='list-item-link'
+                    target='_blank'
+                    rel='noopener noreferrer preload'
+                    aria-label='medium career transitioning journey article'
+                  >
+                    Medium: An Exciting New Career from Bartender to Developer
                   </a>
                 </li>
                 <li>YouTube: Demonstration of Cheryl Lee's Website–Coming Soon!</li>
@@ -76,7 +86,6 @@ export default class Credentials extends React.Component {
                 <li>San Diego Code School: Fullstack Developer, Graduated 2019</li>
                 <li>Cicerone+Spirits Evaluator: Certified Lvl 1/Advanced, 2017</li>
                 <li>San Diego Union Carpenters: Apprenticeship Lvl 6, 2006-12</li>
-                <li>Las Vegas Dealers School: Certified Poker Dealer, 2010</li>
               </ul>
             </div>
           </section>
@@ -103,7 +112,7 @@ export default class Credentials extends React.Component {
               </ul>
             </div>
             <div className={ `${this.state.speakeasyInfo ? 'visible' : 'inVisible'}` }>
-              <h5>Lead Speakeasy Bartender</h5>
+              <h5>Speakeasy Manager</h5>
               <div className='clearfix-wrap'>
                 <img className='dark-glow-image' id='speakeasy-pic' src={ speakeasy } alt='speakeasy' />
                 <div className='center-wrap'>

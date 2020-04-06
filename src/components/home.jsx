@@ -24,7 +24,7 @@ export default class Home extends React.Component {
                   alt='Miles Mickelson portrait'
                 />
                 <p id='intro-info'>
-                  Hi, I’m Miles Mickelson, thank you for visiting my website dedicated for illustrating my skills, credentials, and shedding some light on who I am. I’m looking to fulfill a front-end or full-stack junior developer position, preferably with a dynamic role on an ambitious team, with high-quality output, and great camaraderie. I genuinely value a senior engineer’s insight for betterment. Please, feel free to review my accounts displayed in the footer, and contact me any time.
+                  Hi, I’m Miles Mickelson, thank you for visiting my website dedicated to illustrating my skills, credentials, and shedding some light on who I am. I’m looking to fulfill a Frontend or Fullstack junior developer position, preferably a dynamic role on an ambitious team, with high-quality output, and great camaraderie. I genuinely value a senior engineer’s insight for betterment. Please, feel free to review my accounts displayed in the footer, and contact me any time.
                 </p>
               </div>
               <h4>Proficiencies</h4>
