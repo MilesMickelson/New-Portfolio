@@ -7,6 +7,7 @@ export default class Projects extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      workRhythmInfo: false,
       tealiumInfo: false,
       rangerRadarInfo: false,
       cherylLeeInfo: false,
@@ -15,6 +16,7 @@ export default class Projects extends React.Component {
       movieFinderInfo: false,
       weatherAppInfo: false
     };
+    this.workRhythmToggle = this.workRhythmToggle.bind(this);
     this.tealiumToggle = this.tealiumToggle.bind(this);
     this.rangerRadarToggle = this.rangerRadarToggle.bind(this);
     this.cherylLeeToggle = this.cherylLeeToggle.bind(this);
@@ -22,6 +24,14 @@ export default class Projects extends React.Component {
     this.nasaViewerToggle = this.nasaViewerToggle.bind(this);
     this.movieFinderToggle = this.movieFinderToggle.bind(this);
     this.weatherAppToggle = this.weatherAppToggle.bind(this);
+  }
+
+  workRhythmToggle() {
+    if (this.state.workRhythmInfo === true) {
+      this.setState({ workRhythmInfo: false });
+    } else {
+      this.setState({ workRhythmInfo: true });
+    }
   }
 
   tealiumToggle() {
@@ -121,6 +131,53 @@ export default class Projects extends React.Component {
               <i>Search Engine Optimization </i>
               - Fulfills necessary elements with proper attributes and descriptive text to increase search optimization rating. All link targets and text is sized appropriately for ease of navigating and reading.
             </p>
+          </section>
+          <section>
+            <h4>Passion Projects</h4>
+            <div className='large-list-wrap'>
+              <ul>
+                <li>
+                  <button
+                    type='submit'
+                    className='details-button'
+                    onClick={ this.workRhythmToggle }
+                    aria-label='view project details'
+                    aria-controls='work rhythm info'
+                    aria-expanded='false'
+                  >
+                  Work Rhythm App
+                  </button>
+                </li>
+              </ul>
+              <div className={ `${this.state.workRhythmInfo ? 'visible' : 'inVisible'}` }>
+                <p id='work rhythm info' tabIndex='0'>
+                  Work Rhythm App Info Coming Soon!
+                  <a
+                    href='https://github.com/MilesMickelson/WorkRhythm-App'
+                    rel='noopener noreferrer'
+                    target='_blank'
+                    title='The Work Rhythm Github Repository'
+                    aria-label='Work Rhythm repository link'
+                  >
+                    <i>
+                    –view repository.
+                    </i>
+                  </a>
+                </p>
+                <div className='button-wrap'>
+                  <button
+                    type='submit'
+                    className='close-details red-glow-text'
+                    onClick={ this.workRhythmToggle }
+                    aria-label='close project details'
+                    aria-controls='work rhythm info'
+                    aria-expanded='true'
+                  >
+                  Close Info
+                  </button>
+                </div>
+              </div>
+            </div>
           </section>
           <section>
             <h4>Hackathon Events</h4>

@@ -61,7 +61,7 @@ export default class Credentials extends React.Component {
                     rel='noopener noreferrer preload'
                     aria-label='medium developers tech article'
                   >
-                    Medium: Guide to the Ultimate Developers Tech
+                    Medium: A Comprehensive Guide to the Ultimate Developers Tech
                   </a>
                 </li>
                 <li className='list-item-link'>
@@ -76,6 +76,7 @@ export default class Credentials extends React.Component {
                   </a>
                 </li>
                 <li>YouTube: Demonstration of Cheryl Lee's Website–Coming Soon!</li>
+                <li>YouTube: Demonstration of Portfolio Website–Coming Soon!</li>
               </ul>
             </div>
           </section>
@@ -84,8 +85,7 @@ export default class Credentials extends React.Component {
             <div className='large-list-wrap'>
               <ul>
                 <li>San Diego Code School: Fullstack Developer, Graduated 2019</li>
-                <li>Cicerone+Spirits Evaluator: Certified Lvl 1/Advanced, 2017</li>
-                <li>San Diego Union Carpenters: Apprenticeship Lvl 6, 2006-12</li>
+                <li>Google: Ads Display, Certified 04/2020</li>
               </ul>
             </div>
           </section>

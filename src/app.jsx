@@ -27,7 +27,7 @@ const App = () => {
     <>
       <Title />
       <Sticky style={ { zIndex: '9999' } }>
-        <NavBar/>
+        <NavBar />
       </Sticky>
       <Router>
         <ScrollToTop />

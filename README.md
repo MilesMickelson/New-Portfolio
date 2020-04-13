@@ -8,6 +8,8 @@ My mission for this project was to develop a high-quality website and showcase m
 
 <!-- TODO's -->
 --icon & art accrediting
+--remove 'website' from og title tag?
+--consistent styling for view SDCS student tracker slides button 
 
 * *Improvements*
 --Dynamic animations of nav-icons based on path/location instead of boolean
