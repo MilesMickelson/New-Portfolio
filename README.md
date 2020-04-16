@@ -9,7 +9,7 @@ My mission for this project was to develop a high-quality website and showcase m
 <!-- TODO's -->
 --icon & art accrediting
 --remove 'website' from og title tag?
---consistent styling for view SDCS student tracker slides button 
+--consistent styling for view SDCS student tracker slides button
 
 * *Improvements*
 --Dynamic animations of nav-icons based on path/location instead of boolean
@@ -19,3 +19,5 @@ My mission for this project was to develop a high-quality website and showcase m
 Serve static assets with an efficient cache policy 23 resources found
 Avoid chaining critical requests 1 chain found
 Keep request counts low and transfer sizes small 26 requests • 1,345 KB
+
+Google Tag = GTM-NNBMJL7

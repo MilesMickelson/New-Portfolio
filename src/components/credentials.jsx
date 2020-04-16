@@ -85,7 +85,28 @@ export default class Credentials extends React.Component {
             <div className='large-list-wrap'>
               <ul>
                 <li>San Diego Code School: Fullstack Developer, Graduated 2019</li>
-                <li>Google: Ads Display, Certified 04/2020</li>
+                <li className='list-item-link'>
+                  <a
+                    href='https://skillshop.exceedlms.com/student/award/48040547'
+                    className='list-item-link'
+                    target='_blank'
+                    rel='noopener noreferrer preload'
+                    aria-label='google ads display certificate'
+                  >
+                    Google: Ads Display, Certified 04/2020
+                  </a>
+                </li>
+                <li className='list-item-link'>
+                  <a
+                    href='https://skillshop.exceedlms.com/student/award/48046596'
+                    className='list-item-link'
+                    target='_blank'
+                    rel='noopener noreferrer preload'
+                    aria-label='google ads search certificate'
+                  >
+                    Google: Ads Search, Certified 04/2020
+                  </a>
+                </li>
               </ul>
             </div>
           </section>

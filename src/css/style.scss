@@ -174,10 +174,7 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	// list-style-position: inside;
   font-size: calc(1rem + 1.25vmin);
-	// padding-left: 3.02em;
-	// text-indent: -3.02em;
 }
 
 .details-button {
@@ -847,7 +844,7 @@ summary {
 #breakline2 {
 	width: 100%;
 	transform: rotate(180deg);
-	margin-top: 20px;
+	margin: 20px auto 0px;
 }
 
 #glyph-wrap {

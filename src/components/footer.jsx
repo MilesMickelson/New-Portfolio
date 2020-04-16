@@ -11,12 +11,12 @@ const pigeon = require('../images/pigeon.png');
 export default class Footer extends React.Component {
   render() {
     return (
-      <footer className='container-A'>
-        <div className='container-B'>
+      <div className='container-A'>
+        <footer className='container-B'>
           <div id='resume-wrap' className='red-glow-text'>
             <a
               id='resume-link'
-              href='https://drive.google.com/file/d/1chVBhbWhMskquM57NxW3qV2rJvcHIjuM/view'
+              href='https://drive.google.com/file/d/1UM5N0PS2z0w9xartqO5fUnCkhO6ez14d/view'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -25,9 +25,7 @@ export default class Footer extends React.Component {
               <img className='hidden-spyglass' src={ spyglass } alt='' />
             </a>
           </div>
-          <div className='center-wrap'>
-            <img id='breakline2' src={ breakline2 } alt='' />
-          </div>
+          <img id='breakline2' src={ breakline2 } alt='' />
           <div id='glyph-wrap'>
             <a
               href='https://www.linkedin.com/in/milesmickelson/'
@@ -64,8 +62,8 @@ export default class Footer extends React.Component {
               <img className='glyph' id='youtube' src={ youtube } alt='YouTube' />
             </a>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     );
   }
 }
