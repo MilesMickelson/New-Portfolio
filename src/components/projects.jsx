@@ -131,6 +131,19 @@ export default class Projects extends React.Component {
               <i>Search Engine Optimization </i>
               - Fulfills necessary elements with proper attributes and descriptive text to increase search optimization rating. All link targets and text is sized appropriately for ease of navigating and reading.
             </p>
+            <div className='iframe-container'>
+              <iframe
+                title='powerpoint presentation'
+                frameBorder='0'
+                scrolling='no'
+                marginHeight='0'
+                marginWidth='0'
+                width='788.54'
+                height='443'
+                type='text/html'
+                src='https://www.youtube.com/embed/DBXH9jJRaDk?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com'
+              />
+            </div>
           </section>
           <section>
             <h4>Passion Projects</h4>
@@ -151,7 +164,19 @@ export default class Projects extends React.Component {
               </ul>
               <div className={ `${this.state.workRhythmInfo ? 'visible' : 'inVisible'}` }>
                 <p id='work rhythm info' tabIndex='0'>
-                  Work Rhythm App Info Coming Soon!
+                  The Work Rhythm App is a passion project and potential business idea I've started working on as of 4/15/20. The primary objective is to build a cross-platform desktop application that can enhance workflow productivity and facilitate mindful, healthy habits. Building a website for users to visit, review the software features, and download it shall be deliberated throughout the process of developing the software. An end-mission goal of this project is to provide mobile support integrated with cross-platform functionality unique to your account. Application features include eye and postural intervals, a task item list with time tracking, and more. The plan is to release new versions when individually functioning features are ready for production. The&nbsp;
+                  <a
+                    href='https://workrhythmapp.com'
+                    rel='noopener noreferrer'
+                    target='_blank'
+                    title='The Work Rhythm App website'
+                    aria-label='Work Rhythm App website'
+                  >
+                    <i>
+                    website
+                    </i>
+                  </a>
+                  &nbsp;for the Work Rhythm App to enable downloading for users is currently deployed, however, only as a boilerplate to serve as a temporary exhibit and provide placeholding throughout the development process.
                   <a
                     href='https://github.com/MilesMickelson/WorkRhythm-App'
                     rel='noopener noreferrer'

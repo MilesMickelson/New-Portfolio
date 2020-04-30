@@ -81,10 +81,10 @@ export default class Credentials extends React.Component {
             </div>
           </section>
           <section>
-            <h4>Education</h4>
+            <h4>Certifications</h4>
             <div className='large-list-wrap'>
               <ul>
-                <li>San Diego Code School: Fullstack Developer, Graduated 2019</li>
+                <li>San Diego Code School: Fullstack Developer Certifcate, Graduated 2019</li>
                 <li className='list-item-link'>
                   <a
                     href='https://skillshop.exceedlms.com/student/award/48040547'
@@ -93,7 +93,7 @@ export default class Credentials extends React.Component {
                     rel='noopener noreferrer preload'
                     aria-label='google ads display certificate'
                   >
-                    Google: Ads Display, Certified 04/2020
+                    Google Ads: Display Certificate 04/2020
                   </a>
                 </li>
                 <li className='list-item-link'>
@@ -104,7 +104,7 @@ export default class Credentials extends React.Component {
                     rel='noopener noreferrer preload'
                     aria-label='google ads search certificate'
                   >
-                    Google: Ads Search, Certified 04/2020
+                    Google Ads: Search Certificate 04/2020
                   </a>
                 </li>
               </ul>
