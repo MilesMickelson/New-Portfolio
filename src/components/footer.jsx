@@ -18,7 +18,7 @@ export default class Footer extends React.Component {
               id='resume-link'
               href='https://drive.google.com/file/d/1UM5N0PS2z0w9xartqO5fUnCkhO6ez14d/view'
               target='_blank'
-              rel='noopener noreferrer'
+              rel='noopener noreferrer preload'
             >
               <img className='spyglass' src={ spyglass } alt='' />
               View Resume PDF
@@ -30,14 +30,14 @@ export default class Footer extends React.Component {
             <a
               href='https://www.linkedin.com/in/milesmickelson/'
               target='_blank'
-              rel='noopener noreferrer'
+              rel='noopener noreferrer preload'
             >
               <img className='glyph' id='linkedin' src={ linkedin } alt='LinkedIn' />
             </a>
             <a
               href='https://github.com/MilesMickelson'
               target='_blank'
-              rel='noopener noreferrer'
+              rel='noopener noreferrer preload'
             >
               <img className='glyph' id='github' src={ github } alt='GitHub' />
             </a>
@@ -50,14 +50,14 @@ export default class Footer extends React.Component {
             <a
               href='https://medium.com/@milesmickelson87'
               target='_blank'
-              rel='noopener noreferrer'
+              rel='noopener noreferrer preload'
             >
               <img className='glyph' id='medium' src={ medium } alt='Medium' />
             </a>
             <a
               href='https://www.youtube.com/channel/UCAnL9rFU-4ycu4Lmu08-pkw?view_as=public'
               target='_blank'
-              rel='noopener noreferrer'
+              rel='noopener noreferrer preload'
             >
               <img className='glyph' id='youtube' src={ youtube } alt='YouTube' />
             </a>

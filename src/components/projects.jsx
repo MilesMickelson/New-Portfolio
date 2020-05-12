@@ -102,7 +102,7 @@ export default class Projects extends React.Component {
           <section className='center-wrap'>
             <h4>MilesMickelson.com</h4>
             <p>
-              My mission for this project was to develop a high-quality website and showcase my creative ingenuity. To do so, I used Node, React, Parcel, Sass, and a custom ES-Lint AirBNB configuration for clean and concise code. This website is fully responsive across all screen sizes, without the use of a single media query, and maintains the utmost browser compatibility. I was able to maximize performance, accessibility, best practices, and search engine optimization by utilizing the Lighthouse module, the final audit score–and outline, are displayed below. Furthermore, Google Analytics integrated for continuous improvement
+            My objective for this project was to develop a professional-grade website encompassing high-performance and creative equality. To do so, I used Node, React, Parcel, Sass, and a custom ES-Lint AirBNB configuration for clean and concise code. This website is fully responsive across all screen sizes, without the use of a single media query, and maintains the utmost browser compatibility. I was able to maximize performance, accessibility, best practices, and search engine optimization by utilizing the Lighthouse module, the final audit score–and outline, are displayed below. Furthermore, Google Analytics integrated for continuous improvement
               <a
                 href='https://github.com/MilesMickelson/MilesMickelson.github.io'
                 className='post-link'
@@ -116,20 +116,20 @@ export default class Projects extends React.Component {
             </p>
             <img className='dark-glow-image' id='audit' src={ audit } alt='audit score' />
             <p className='audit-description'>
-              <i>Performance </i>
-              - All files and images are compressed and served in a gzip, brotli, or select image format to decrease the total size and loading time. Through asynchronous downloading in the background the HTML parses without disruption or waiting, allowing the presentation of the website sooner. Once the initial loading phase is complete, automatic pre-rendering for the remainder of the pages begins, allowing a complete download before you navigate to them.
+              <i className='underline'>Performance </i>
+              - All files and images are served in a compressed format to decrease the total size and loading time. Through asynchronous downloading in the background, the HTML parses without disruption or waiting; this enables the website delivery as quickly as possible. Once loading for the main landing page is complete, automatic pre-rendering for the remainder of the pages and links begins; this allows for an instant view of the page when navigating there.
             </p>
             <p className='audit-description'>
-              <i>Accessibility </i>
-              - Utilizing correct aria attributes with valid values and a proper HTML structure with landmark elements, the site is 100% accessible. Allowing for navigation with a keyboard and voice assistant technology, giving the user informative feedback on essential and informative elements only, and quickly.
+              <i className='underline'>Accessibility </i>
+              - Utilizing the appropriate aria labels with valid values and a proper HTML structure with landmark elements, the site is 100% accessible.  Providing for full navigation with a keyboard and voice assistant technology, granting informatory feedback on only the most essential features, and quickly.
             </p>
             <p className='audit-description'>
-              <i>Best Practices </i>
-              - Employs HTTPS for secure server communication and HTML attributes for helping to prevent vulnerabilities. All images displayed with the correct aspect ratio and no browser errors logged into the console.
+              <i className='underline'>Best Practices </i>
+              - Employs HTTPS for secure server communication and HTML attributing to assist in preventing potential vulnerabilities. All images presented with the correct aspect ratio and no browser errors logged to the console.
             </p>
             <p className='audit-description'>
-              <i>Search Engine Optimization </i>
-              - Fulfills necessary elements with proper attributes and descriptive text to increase search optimization rating. All link targets and text is sized appropriately for ease of navigating and reading.
+              <i className='underline'>Search Engine Optimization </i>
+              - Fulfills necessary elements with appropriate attributes and descriptive text to increase search optimization rating.  All link targets and fonts are sized appropriately for ease of navigating and reading.
             </p>
             <div className='iframe-container'>
               <iframe
@@ -141,8 +141,9 @@ export default class Projects extends React.Component {
                 width='788.54'
                 height='443'
                 type='text/html'
-                src='https://www.youtube.com/embed/DBXH9jJRaDk?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com'
+                src=''
               />
+              PowerPoint presentation coming soon!
             </div>
           </section>
           <section>
@@ -167,7 +168,7 @@ export default class Projects extends React.Component {
                   The Work Rhythm App is a passion project and potential business idea I've started working on as of 4/15/20. The primary objective is to build a cross-platform desktop application that can enhance workflow productivity and facilitate mindful, healthy habits. Building a website for users to visit, review the software features, and download it shall be deliberated throughout the process of developing the software. An end-mission goal of this project is to provide mobile support integrated with cross-platform functionality unique to your account. Application features include eye and postural intervals, a task item list with time tracking, and more. The plan is to release new versions when individually functioning features are ready for production. The&nbsp;
                   <a
                     href='https://workrhythmapp.com'
-                    rel='noopener noreferrer'
+                    rel='noopener noreferrer preload'
                     target='_blank'
                     title='The Work Rhythm App website'
                     aria-label='Work Rhythm App website'
@@ -176,10 +177,10 @@ export default class Projects extends React.Component {
                     website
                     </i>
                   </a>
-                  &nbsp;for the Work Rhythm App to enable downloading for users is currently deployed, however, only as a boilerplate to serve as a temporary exhibit and provide placeholding throughout the development process.
+                  &nbsp;for the Work Rhythm App to enable downloading for users is currently deployed, however, only as a boilerplate to serve as a temporary exhibit and provide placeholding throughout the development process
                   <a
                     href='https://github.com/MilesMickelson/WorkRhythm-App'
-                    rel='noopener noreferrer'
+                    rel='noopener noreferrer preload'
                     target='_blank'
                     title='The Work Rhythm Github Repository'
                     aria-label='Work Rhythm repository link'
@@ -359,19 +360,19 @@ export default class Projects extends React.Component {
               </ul>
               <div className={ `${this.state.studentTrackerInfo ? 'visible' : 'inVisible'}` }>
                 <p id='student tracker info' tabIndex='0'>
-                My final SDCS group project employed numerous technologies, built with React, Redux, MongoDB, Loopback, and various API's, executed with an Agile workflow. We successfully integrated a custom command into the school's slack workspace where information could be entered and thereby saved to a database, further, implementing this data into a dashboard for individuals and administration to view current progress trends. I alone was responsible for incorporating the GitHub API for displaying the total commits in the last seven days. This is a private school project but you can 
+                My final SDCS group project employed numerous technologies, built with React, Redux, MongoDB, Loopback, and various API's, executed with an Agile workflow. We successfully integrated a custom command into the school's slack workspace where information could be entered and thereby saved to a database, further, implementing this data into a dashboard for individuals and administration to view current progress trends. I alone was responsible for incorporating the GitHub API for displaying the total commits in the last seven days. This is a private school project but you can&nbsp;
+                  <a
+                    href='https://docs.google.com/presentation/d/1iw3wiJjei8YvO2oOsxynlhbxU0ECeZ6zdyzsHLa7BvY/edit?usp=sharing'
+                    rel='noopener noreferrer'
+                    target='_blank'
+                    title='Student Tracker school project presentation slides'
+                    aria-label='view student tracker presentation slides'
+                  >
+                    <i>
+                    view our presentation slides here.
+                    </i>
+                  </a>
                 </p>
-                <a
-                  href='https://docs.google.com/presentation/d/1iw3wiJjei8YvO2oOsxynlhbxU0ECeZ6zdyzsHLa7BvY/edit?usp=sharing'
-                  rel='noopener noreferrer'
-                  target='_blank'
-                  title='Student Tracker school project presentation slides'
-                  aria-label='view student tracker presentation slides'
-                >
-                  <i>
-                  view our presentation slides here.
-                  </i>
-                </a>
                 <div className='button-wrap'>
                   <button
                     type='submit'

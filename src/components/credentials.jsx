@@ -9,7 +9,7 @@ export default class Credentials extends React.Component {
     this.state = {
       speakeasyInfo: false,
       machiningInfo: false,
-      carpentryInfo: false
+      carpentryInfo: false,
     };
     this.speakeasyToggle = this.speakeasyToggle.bind(this);
     this.machiningToggle = this.machiningToggle.bind(this);
@@ -75,7 +75,6 @@ export default class Credentials extends React.Component {
                     Medium: An Exciting New Career from Bartender to Developer
                   </a>
                 </li>
-                <li>YouTube: Demonstration of Cheryl Lee's Website–Coming Soon!</li>
                 <li>YouTube: Demonstration of Portfolio Website–Coming Soon!</li>
               </ul>
             </div>
@@ -84,7 +83,17 @@ export default class Credentials extends React.Component {
             <h4>Certifications</h4>
             <div className='large-list-wrap'>
               <ul>
-                <li>San Diego Code School: Fullstack Developer Certifcate, Graduated 2019</li>
+                <li className='list-item-link'>
+                  <a
+                    href='https://drive.google.com/file/d/1bceTh6L5v9NSualkrnz3hQz1ltloZQuL/view'
+                    className='list-item-link'
+                    target='_blank'
+                    rel='noopener noreferrer preload'
+                    aria-label='SDCS Graduation Certificate'
+                  >
+                    San Diego Code School: Fullstack Developer - Graduated 2019
+                  </a>
+                </li>
                 <li className='list-item-link'>
                   <a
                     href='https://skillshop.exceedlms.com/student/award/48040547'
@@ -113,8 +122,7 @@ export default class Credentials extends React.Component {
           <section>
             <h4>Experience</h4>
             <p>
-              I have always had a highly motivated and self-disciplined personality, seeking the utmost professionalism and reliability in the workplace. Throughout a variety of demanding roles, I have been acknowledged for my capacity to build strong, collaborative relationships, and for an ability to accept a multitude of responsibilities. Furthermore, being touted for competence to lead in a team environment and work as a team player, bestowing positive contributions to the success of our objective
-              <i>–Read more below...</i>
+              I have always had a highly motivated and self-disciplined personality, seeking the utmost professionalism and reliability in the workplace. Throughout a variety of demanding roles, I have been acknowledged for my capacity to build strong, collaborative relationships, and for an ability to accept a multitude of responsibilities. Furthermore, being touted for competence to lead in a team environment and work as a team player, bestowing positive contributions to the success of our objective.
             </p>
             <div className='large-list-wrap'>
               <ul className={ `${this.state.speakeasyInfo ? 'inVisible' : 'visible'}` }>
@@ -202,7 +210,7 @@ export default class Credentials extends React.Component {
               </ul>
             </div>
             <div className={ `center-wrap ${this.state.carpentryInfo ? 'visible' : 'inVisible'}` }>
-              <h5>Nuclear Carpenter</h5>
+              <h5>San Onofre Carpenter</h5>
               <p id='carpentry info' tabIndex='0'>
                 At 16 years of age, I started my first business pressure washing for people in my neighborhood and simultaneously delivered for Pizza Hut after getting my license later. During this time, a neighbor, Bill Newton, took me under his wing and offered me an opportunity to work at the San Onofre Nuclear Power Plant. He was the highest-level manager for the Union Carpenter's Trade on site. During the first season, my role was supporting the tradesman. However, after being fully immersed 60 hours a week for over three months, I decided to go through the Union Carpenters apprenticeship. I was in the trade for the next six years employed by many contractors doing finish, roofing, concrete, and scaffolding work. The reputation for my work ethic earned me recommendations from many of my foremen on numerous job sites. During my last contract at the power plant, I fulfilled a lead role for journeyman carpenters new to the job site. I'm still great friends with Bill Newton, the man who introduced me to the trade, and many of the individuals I worked with together today.
               </p>

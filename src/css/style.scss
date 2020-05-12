@@ -398,8 +398,7 @@ summary {
 	max-width: 216px;
 }
 
-#subtitle-wrap {
-  @include row-center;
+#subtitle {
 	margin-top: 10px;
 }
 
@@ -410,10 +409,6 @@ summary {
 	margin-top: 5px;
 }
 
-/*#endregion Title*/
-
-/*#region NavBar*/
-
 #navlabels-wrap {
   display: flex;
 	flex-flow: row nowrap;
@@ -422,6 +417,10 @@ summary {
 	width: 400px;
 	margin: 15px auto 0;
 }
+
+/*#endregion Title*/
+
+/*#region NavBar*/
 
 #home {
 	margin-right: 13px;
@@ -759,6 +758,10 @@ summary {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 /*#endregion Projects Page*/

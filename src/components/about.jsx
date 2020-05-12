@@ -16,7 +16,7 @@ export default class About extends React.Component {
           <section>
             <h4>Ambition</h4>
             <p>
-              Miles Mickelson, born in Sacramento, California, is currently residing in San Diego and looking to fulfill a position as a front-end or full-stack junior developer. I am bound and determined to become the best developer that I can be. And I believe that taking my strengths and variety of work experience into account, it can culminate into becoming a valuable asset for anyone who employs me. It would bring me great satisfaction to produce valuable results that have a positive impact on business and people's lives.
+            Miles Mickelson, born in Sacramento, California, is currently residing in San Diego and looking to fulfill a position as a Web Designer, Frontend Developer, or a Fullstack Engineer in Columbus, OH. I am bound and determined to become the best developer that I can be and confident that taking my strengths and variety of work experience into account, it will culminate into becoming a valuable asset for anyone who employs me. It would bring me great satisfaction to produce useful results that have a positive impact on business and people's lives.
             </p>
           </section>
           <section>
@@ -26,9 +26,7 @@ export default class About extends React.Component {
             </p>
           </section>
           <section classsName='center-wrap'>
-            <h4>
-              Hobbies
-            </h4>
+            <h4>Hobbies</h4>
             <div className='clearfix-wrap'>
               <img className='dark-glow-image' id='pool-pic' src={ pool } alt='playing pool' />
               <p id='hobbies-info'>

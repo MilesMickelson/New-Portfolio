@@ -24,32 +24,35 @@ export default class Home extends React.Component {
                   alt='Miles Mickelson portrait'
                 />
                 <p id='intro-info'>
-                  Hi, I’m Miles Mickelson, thank you for visiting my website dedicated to illustrating my skills, credentials, and shedding some light on who I am. I’m looking to fulfill a Frontend or Fullstack junior developer position, preferably a dynamic role on an ambitious team, with high-quality output, and great camaraderie. I genuinely value a senior engineer’s insight for betterment. Please, feel free to review my accounts displayed in the footer, and contact me any time.
+                Hi, I’m Miles Mickelson and thank you for visiting my website, in it, you will find an outline of my skills, credentials, some helpful resources, and a little info about me. I’m looking to fulfill a Web Designer, Frontend Developer, or a Fullstack Engineer position, preferably a dynamic role with evolving challenges and opportunities to substantiate my skills. I genuinely value a supervisor’s insight for betterment. Please, feel free to review my work and publications, and contact me with any inquiries, thanks again.
                 </p>
               </div>
               <h4>Proficiencies</h4>
               <p>
-                I love to embrace new challenges, so I'm always looking forward to opportunities that test my aptitude and allow me to grow as a developer. Therefore my potential is not limited to the languages and technologies listed here.
+              I am a passionately driven and disciplined professional with an extensive history of success in undertaking demanding roles. I love to embrace new challenges, and I'm always engaged in opportunities that test my aptitude and allow me to grow as a developer and a human being.
               </p>
             </div>
             <div id='prof-list-wrap'>
               <ul>
-                <li className='first-item'>Javascript</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li className='last-item'>Sass+Less</li>
+                <li className='first-item'>React/JS</li>
+                <li>Node</li>
+                <li>HTML</li>
+                <li>Responsive UI</li>
+                <li className='last-item'>Accessibility</li>
               </ul>
               <ul>
-                <li className='first-item'>MongoDB</li>
+                <li className='first-item'>Sass/Less</li>
+                <li>MongoDB</li>
                 <li>MySQL</li>
                 <li>Loopback</li>
-                <li className='last-item'>Mocha+Chai</li>
+                <li className='last-item'>Testing</li>
               </ul>
               <ul>
-                <li className='first-item'>Git Workflow</li>
-                <li>Heroku</li>
-                <li>CircleCI</li>
-                <li className='last-item'>Scrum+Agile</li>
+                <li className='first-item'>Git/Agile</li>
+                <li>Communication</li>
+                <li>Adaptability</li>
+                <li>Google Ads</li>
+                <li className='last-item'>Google Analytics</li>
               </ul>
             </div>
           </section>

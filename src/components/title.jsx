@@ -18,10 +18,8 @@ export default class Title extends React.Component {
             />
             <h1 className='dark-glow-image' id='title-part2' aria-label='Mickelson'>M</h1>
           </div>
-          <div id='subtitle-wrap'>
-            <h2 id='sub-title'>Fullstack&nbsp;Developer</h2>
-            <img id='breakline1' src={ breakline1 } alt='' />
-          </div>
+          <h2 id='sub-title'>Fullstack&nbsp;Developer</h2>
+          <img id='breakline1' src={ breakline1 } alt='' />
           <div id='navlabels-wrap'>
             <em id='home'>Home</em>
             <em id='projects'>Projects</em>
