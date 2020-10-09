@@ -7,13 +7,9 @@ My objective for this project was to develop a professional-grade website encomp
 * **Thank you**, ***-Miles Mickelson***
 
 <!-- TODO's -->
---icon & art accrediting
-
 * *Improvements*
 --Dynamic animations of nav-icons based on path/location instead of boolean
--- CSS- text-underline-position: under;?
-
-* *Performance improvements*
-Serve static assets with an efficient cache policy 23 resources found
+--CSS: text-underline-position: under;?
+--Serve static assets with an efficient cache policy 23 resources found
 Avoid chaining critical requests 1 chain found
 Keep request counts low and transfer sizes small 26 requests • 1,345 KB

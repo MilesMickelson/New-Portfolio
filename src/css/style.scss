@@ -212,6 +212,10 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 	width: 100%;
 }
 
+.italic {
+	font-style: italic;
+}
+
 /*#endregion Global Styling*/
 
 /*#region HTML Tag Styling*/
@@ -296,11 +300,10 @@ h5 {
 
 //Sub-Section Header
 h6 {
-  @include pirate-italic;
-	font-size: calc(1rem + 1vmin);
-	text-decoration: underline;
-  text-align: center;
-	margin: 5px 0 0 0;
+  @include primary-font;
+	font-size: calc(.9rem + .9vmin);
+	display: inline-flex;
+	margin: 5px auto 0px;
 }
 
 p {
@@ -730,6 +733,32 @@ summary {
   margin-top: 4px;
 }
 
+.testimonial-wrap {
+	display: inline-block;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+	vertical-align: top;
+	margin: 0 auto;
+}
+
+.testimonial {
+	float: left;
+	width: 50%;
+	padding-left: 2.5vmin;
+	font-size: calc(.8rem + .7vmin);
+}
+
+.referencee {
+	all: unset;
+	float: right;
+	padding-right: 15px;
+}
+
+.top {
+	margin-top: 5px;
+}
+
 /*#endregion Home Page*/
 
 /*#region Projects Page*/
@@ -799,7 +828,7 @@ summary {
 /*#region Footer*/
 
 #resume-wrap {
-	margin-top: 50px;
+	margin-top: 25px;
 	text-align: center;
 }
 
