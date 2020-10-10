@@ -212,10 +212,6 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 	width: 100%;
 }
 
-.italic {
-	font-style: italic;
-}
-
 /*#endregion Global Styling*/
 
 /*#region HTML Tag Styling*/
@@ -745,6 +741,7 @@ summary {
 .testimonial {
 	float: left;
 	width: 50%;
+	min-width: 370px;
 	padding-left: 2.5vmin;
 	font-size: calc(.8rem + .7vmin);
 }
@@ -757,6 +754,10 @@ summary {
 
 .top {
 	margin-top: 5px;
+}
+
+.italic {
+	font-style: italic;
 }
 
 /*#endregion Home Page*/

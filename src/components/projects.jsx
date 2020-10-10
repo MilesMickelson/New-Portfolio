@@ -102,7 +102,7 @@ export default class Projects extends React.Component {
           <section className='center-wrap'>
             <h4>MilesMickelson.com</h4>
             <p>
-            My objective for this project was to develop a professional-grade website encompassing high-performance and creative equality. To do so, I used Node, React, Parcel, Sass, and a custom ES-Lint AirBNB configuration for clean and concise code. This website is fully responsive across all screen sizes, without the use of a single media query, and maintains the utmost browser compatibility. I was able to maximize performance, accessibility, best practices, and search engine optimization by utilizing the Lighthouse module, the final audit score–and outline, are displayed below. Furthermore, Google Analytics integrated for continuous improvement
+              My objective for this project was to develop a professional-grade website encompassing high-performance and creative equality. To do so, I used Node, React, Parcel, Sass, and a custom ES-Lint AirBNB configuration for clean and concise code. This website is fully responsive across all screen sizes, without the use of a single media query, and maintains the utmost browser compatibility. I was able to maximize performance, accessibility, best practices, and search engine optimization by utilizing the Lighthouse module, the final audit score–and outline, are displayed below. Furthermore, Google Analytics integrated for continuous improvement
               <a
                 href='https://github.com/MilesMickelson/MilesMickelson.github.io'
                 className='post-link'
@@ -143,7 +143,7 @@ export default class Projects extends React.Component {
                 type='text/html'
                 src=''
               />
-              PowerPoint presentation coming soon!
+              Embedded PowerPoint presentation video coming soon!
             </div>
           </section>
           <section>
@@ -159,7 +159,7 @@ export default class Projects extends React.Component {
                     aria-controls='work rhythm info'
                     aria-expanded='false'
                   >
-                  Work Rhythm App
+                    Work Rhythm App
                   </button>
                 </li>
               </ul>
@@ -174,7 +174,7 @@ export default class Projects extends React.Component {
                     aria-label='Work Rhythm App website'
                   >
                     <i>
-                    website
+                      website
                     </i>
                   </a>
                   &nbsp;for the Work Rhythm App to enable downloading for users is currently deployed, however, only as a boilerplate to serve as a temporary exhibit and provide placeholding throughout the development process
@@ -186,7 +186,7 @@ export default class Projects extends React.Component {
                     aria-label='Work Rhythm repository link'
                   >
                     <i>
-                    –view repository.
+                      –view repository.
                     </i>
                   </a>
                 </p>
@@ -199,7 +199,7 @@ export default class Projects extends React.Component {
                     aria-controls='work rhythm info'
                     aria-expanded='true'
                   >
-                  Close Info
+                    Close Info
                   </button>
                 </div>
               </div>
@@ -218,7 +218,7 @@ export default class Projects extends React.Component {
                     aria-controls='tealium info'
                     aria-expanded='false'
                   >
-                  The Total Machine
+                    The Total Machine
                   </button>
                 </li>
               </ul>
@@ -233,7 +233,7 @@ export default class Projects extends React.Component {
                     aria-label='total machine project repository link'
                   >
                     <i>
-                    –view repository.
+                      –view repository.
                     </i>
                   </a>
                 </p>
@@ -246,7 +246,7 @@ export default class Projects extends React.Component {
                     aria-controls='tealium info'
                     aria-expanded='true'
                   >
-                  Close Info
+                    Close Info
                   </button>
                 </div>
               </div>
@@ -262,7 +262,7 @@ export default class Projects extends React.Component {
                     aria-controls='ranger radar info'
                     aria-expanded='false'
                   >
-                  Ranger Radar
+                    Ranger Radar
                   </button>
                 </li>
               </ul>
@@ -278,7 +278,7 @@ export default class Projects extends React.Component {
                     aria-label='ranger radar project repository link'
                   >
                     <i>
-                    –view repository.
+                      –view repository.
                     </i>
                   </a>
                 </p>
@@ -291,7 +291,7 @@ export default class Projects extends React.Component {
                     aria-controls='ranger radar info'
                     aria-expanded='true'
                   >
-                  Close Info
+                    Close Info
                   </button>
                 </div>
               </div>
@@ -310,13 +310,13 @@ export default class Projects extends React.Component {
                     aria-controls='cheryl lees info'
                     aria-expanded='false'
                   >
-                  Cheryl lee's Custom Portfolio Website
+                    Cheryl lee's Custom Portfolio Website
                   </button>
                 </li>
               </ul>
               <div className={ `${this.state.cherylLeeInfo ? 'visible' : 'inVisible'}` }>
                 <p id='cheryl lees info' tabIndex='0'>
-                For my mid-term SDCS group project, we created a custom portfolio website for Ms. Lee to showcase her achievements, affiliations, and credentials. The development also included an automated contact page. Leveraging my soft skills and proficiencies in HTML and CSS, I played a leading role in this project, developing a responsive website with well-maintained code. I was responsible for designing the title, navigation bar, home page, and the footer specifically. I followed up with Ms. Lee to make updates and finalize the project
+                  For my mid-term SDCS group project, we created a custom portfolio website for Ms. Lee to showcase her achievements, affiliations, and credentials. The development also included an automated contact page. Leveraging my soft skills and proficiencies in HTML and CSS, I played a leading role in this project, developing a responsive website with well-maintained code. I was responsible for designing the title, navigation bar, home page, and the footer specifically. I followed up with Ms. Lee to make updates and finalize the project
                   <a
                     href='https://github.com/MilesMickelson/Cheryl-Lee-Review'
                     rel='noopener noreferrer'
@@ -325,7 +325,7 @@ export default class Projects extends React.Component {
                     aria-label='view cheryl lee project repository link'
                   >
                     <i>
-                    –view demo repository.
+                      –view demo repository.
                     </i>
                   </a>
                 </p>
@@ -338,7 +338,7 @@ export default class Projects extends React.Component {
                     aria-expanded='true'
                     onClick={ this.cherylLeeToggle }
                   >
-                  Close Info
+                    Close Info
                   </button>
                 </div>
               </div>
@@ -354,13 +354,13 @@ export default class Projects extends React.Component {
                     aria-controls='student tracker info'
                     aria-expanded='false'
                   >
-                  SDCS Student Tracker
+                    SDCS Student Tracker
                   </button>
                 </li>
               </ul>
               <div className={ `${this.state.studentTrackerInfo ? 'visible' : 'inVisible'}` }>
                 <p id='student tracker info' tabIndex='0'>
-                My final SDCS group project employed numerous technologies, built with React, Redux, MongoDB, Loopback, and various API's, executed with an Agile workflow. We successfully integrated a custom command into the school's slack workspace where information could be entered and thereby saved to a database, further, implementing this data into a dashboard for individuals and administration to view current progress trends. I alone was responsible for incorporating the GitHub API for displaying the total commits in the last seven days. This is a private school project but you can&nbsp;
+                  My final SDCS group project employed numerous technologies, built with React, Redux, MongoDB, Loopback, and various API's, executed with an Agile workflow. We successfully integrated a custom command into the school's slack workspace where information could be entered and thereby saved to a database, further, implementing this data into a dashboard for individuals and administration to view current progress trends. I alone was responsible for incorporating the GitHub API for displaying the total commits in the last seven days. This is a private school project but you can&nbsp;
                   <a
                     href='https://docs.google.com/presentation/d/1iw3wiJjei8YvO2oOsxynlhbxU0ECeZ6zdyzsHLa7BvY/edit?usp=sharing'
                     rel='noopener noreferrer'
@@ -369,7 +369,7 @@ export default class Projects extends React.Component {
                     aria-label='view student tracker presentation slides'
                   >
                     <i>
-                    view our presentation slides here.
+                      view our presentation slides here.
                     </i>
                   </a>
                 </p>
@@ -382,7 +382,7 @@ export default class Projects extends React.Component {
                     aria-controls='student tracker info'
                     aria-expanded='true'
                   >
-                  Close Info
+                    Close Info
                   </button>
                 </div>
               </div>
@@ -398,7 +398,7 @@ export default class Projects extends React.Component {
                     aria-controls='nasa viewer info'
                     aria-expanded='false'
                   >
-                  NASA Viewer
+                    NASA Viewer
                   </button>
                 </li>
               </ul>
@@ -412,7 +412,7 @@ export default class Projects extends React.Component {
                     aria-label='NASA viewer project github repository link'
                   >
                     <i>
-                    –view repository.
+                      –view repository.
                     </i>
                   </a>
                 </p>
@@ -425,7 +425,7 @@ export default class Projects extends React.Component {
                     aria-controls='nasa viewer info'
                     aria-expanded='true'
                   >
-                  Close Info
+                    Close Info
                   </button>
                 </div>
               </div>
@@ -441,7 +441,7 @@ export default class Projects extends React.Component {
                     aria-controls='movie finder info'
                     aria-expanded='false'
                   >
-                  Movie Finder
+                    Movie Finder
                   </button>
                 </li>
               </ul>
@@ -455,7 +455,7 @@ export default class Projects extends React.Component {
                     aria-label='React 200 Movie Finder project github repository link'
                   >
                     <i>
-                    –view repository.
+                      –view repository.
                     </i>
                   </a>
                 </p>
@@ -468,7 +468,7 @@ export default class Projects extends React.Component {
                     aria-controls='movie finder info'
                     aria-expanded='true'
                   >
-                  Close Info
+                    Close Info
                   </button>
                 </div>
               </div>
@@ -484,7 +484,7 @@ export default class Projects extends React.Component {
                     aria-controls='weather app info'
                     aria-expanded='false'
                   >
-                  Weather App
+                    Weather App
                   </button>
                 </li>
               </ul>
@@ -498,7 +498,7 @@ export default class Projects extends React.Component {
                     aria-label='React 200 Weather App project github repository link'
                   >
                     <i>
-                    –view repository.
+                      –view repository.
                     </i>
                   </a>
                 </p>
@@ -511,7 +511,7 @@ export default class Projects extends React.Component {
                     aria-controls='weather app info'
                     aria-expanded='true'
                   >
-                  Close Info
+                    Close Info
                   </button>
                 </div>
               </div>

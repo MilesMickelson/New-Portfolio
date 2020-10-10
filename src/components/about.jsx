@@ -16,7 +16,7 @@ export default class About extends React.Component {
           <section>
             <h4>Ambition</h4>
             <p>
-            Miles Mickelson, born in California, is currently residing in Columbus, Ohio with his girlfriend Samantha, currently working on her Ph.D. for Environmental Research Psychology at Ohio State University. I am bound and determined to become the best developer that I can be and confident that taking my strengths and variety of work experience into account, it will culminate into becoming a valuable asset for anyone who employs me. It brings me great satisfaction to produce results that have a positive impact for an organization and people's lives.
+              Miles Mickelson, born in California, is currently residing in Columbus, Ohio with his girlfriend Samantha, currently working on her Ph.D. for Environmental Research Psychology at Ohio State University. I am bound and determined to become the best developer that I can be and confident that taking my strengths and variety of work experience into account, it will culminate into becoming a valuable asset for anyone who employs me. It brings me great satisfaction to produce results that have a positive impact for an organization and people's lives.
             </p>
           </section>
           <section>
