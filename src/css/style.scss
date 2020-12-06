@@ -1,7 +1,5 @@
 /*#region Global Styling*/
-
 //-----SCAFFOLDING-----
-
 .container-A {
 	width: 100%;
 }
@@ -27,7 +25,6 @@
 }
 
 //-----COLORS-----
-
 $black: #000000;
 $black-5: #0d0d0d;
 $black-10: #1a1a1a;
@@ -52,7 +49,6 @@ $red10: #330000;
 $red5: #1a0000;
 
 //-----FONTS-----
-
 @font-face {
   font-family: 'NugieItalic';
   src: local('Nugieitalic'), url(../fonts/NugieItalic.ttf) format('truetype');
@@ -88,7 +84,6 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 }
 
 //-----ANIMATIONS-----
-
 .dark-glow-image {
   animation: dark-glow-image 1s ease-in-out infinite alternate;
   -webkit-animation: dark-glow-image 1s ease-in-out infinite alternate;
@@ -127,7 +122,6 @@ $primary-font: Verdana, Arial, Times, Courier, Georgia;
 }
 
 //-----COMMON STYLING-----
-
 .visible {
 	display: normal;
 }
